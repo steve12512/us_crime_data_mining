@@ -2,8 +2,16 @@
 import pandas as pd 
 import numpy as np 
 
-#read the file
+#display max columns
+pd.set_option('display.max_columns', None)  # Set to None to display all columns
+
+
+#read the files
 shootings = pd.read_csv('shootings.csv')
+population = pd.read_csv('us_pop_by_state.csv')
+
+
+
 
 #defining functions we will be using in order to create a datacube
 #the functions below return dataframe objects
@@ -17,7 +25,7 @@ def get_mental_illness():
     #find the percentage of shot suspects that have shown signs of mental illnes 
     var = shootings2[shootings2['signs_of_mental_illness'] == True]
 
-    percentage = (len(shootings2) / len(shootings)) * 100
+    percentage = (len(var) / len(shootings)) * 100
     print('percentage of mentally ill', percentage)
     return var
 
@@ -83,17 +91,26 @@ def get_color():
 def groupby_state_year():
     #in this function we will be using the groupby method on the state and year attributes. first obj is unordered,2nd is ordered by state and 3rd is ordered by date
     #group by state and year to see where most incidents occured
+    #BEFORE doing the above, we want to map each state to its population and then its indicdents per 100k of its population
+    #firstly we have to do the mapping
 
-    state_year = df.groupby(['state', 'year']).size().reset_index(name='incidents_per_state_per_year')
-    print(state_year)
+    shootings2 = df.copy()
+    shootings2 = pd.merge(shootings2, population, left_on = 'state', right_on = 'state_code', how= 'left')
+    state_year = shootings2.groupby(['state_x', 'year']).size().reset_index(name='incidents_per_state_per_year')
+
+    #now we want to take the above groupby and calculate the incidents per 100k of its population
+    state_year['per 100k of its population'] = state_year['incidents_per_state_per_year'] / 
+
+
+    print(state_year.head(5))
 
     #take the above groupby and order by count descending, to see which state remains the most violent one
     stateord_year = state_year.sort_values(by = 'incidents_per_state_per_year', ascending = False)
-    print(stateord_year.head(20))
-
+    print(stateord_year.head(5))
+-=09--
     #this time, order by year
     state_yearord = state_year.sort_values(by = 'year', ascending= False)
-    print(state_yearord)
+    print(state_yearord.head(5))
 
     return state_year, stateord_year, state_yearord
 
