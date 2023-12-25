@@ -63,6 +63,29 @@ def get_peace_sane_unarmed():
 
     return var
 
+def get_color():
+    #here we wil find how many people of color are part of the dataframe
+
+    #first lets copy the original dataframe to operate upon
+    shootings2 = shootings.copy()
+
+    #only keep black and hispanic people
+    var = shootings2[(shootings2['race'] == 'Black') | (shootings2['race'] == 'Hispanic')]
+    percentage = len(var) / len(shootings2) * 100
+
+    print('Black and Hispanic people make up ', percentage, ' of the dataset')
+    print('Again we cannot reach any conclusion that indicates a racial motivation to lie within the general tendecy.')
+    return var
+
+
+
+
+
+
+
+
+
+#START OF PROGRAM
 
 
 #START OF ETL
@@ -76,3 +99,4 @@ mental = get_mental_illness()
 mental_armed = get_armed_mental_illness()
 mental_toygun = get_mental_toygun()
 peace_sane_unarmed = get_peace_sane_unarmed()
+color = get_color()
