@@ -30,8 +30,6 @@ def get_armed_mental_illness():
     return armed_mental
 
 
-
-
 def get_mental_toygun():    
     #here we will find the number of shot suspects that were mentally ill and had only a toygun
 
@@ -77,12 +75,22 @@ def get_color():
     print('Again we cannot reach any conclusion that indicates a racial motivation to lie within the general tendecy.')
     return var
 
+def groupby_state_year():
+    #in this function we will be using the groupby method on the state and year attributes. first obj is unordered,2nd is ordered by state and 3rd is ordered by date
+    #group by state and year to see where most incidents occured
 
+    state_year = df.groupby(['state', 'year']).size().reset_index(name='incidents_per_state_per_year')
+    print(state_year)
 
+    #take the above groupby and order by count descending, to see which state remains the most violent one
+    stateord_year = state_year.sort_values(by = 'incidents_per_state_per_year', ascending = False)
+    print(stateord_year.head(20))
 
+    #this time, order by year
+    state_yearord = state_year.sort_values(by = 'year', ascending= False)
+    print(state_yearord)
 
-
-
+    return state_year, stateord_year, state_yearord
 
 
 #START OF PROGRAM
@@ -91,7 +99,15 @@ def get_color():
 #START OF ETL
 #print(shootings.head(5))
 
+#convert date into a datetime object
+shootings['date'] = pd.to_datetime(shootings['date'])
+print(shootings.dtypes)
 
+#keep a copy of the dataframe to operate upob
+df = shootings.copy()
+
+#add a year column
+df['year'] = pd.to_datetime(df['date']).dt.year
 
 
 #START OF AGGREGATION
@@ -100,3 +116,11 @@ mental_armed = get_armed_mental_illness()
 mental_toygun = get_mental_toygun()
 peace_sane_unarmed = get_peace_sane_unarmed()
 color = get_color()
+
+
+#START OF CREATING THE DATACUBE
+
+#state and year groupbys
+state_year, stateORD_year, state_yearORD = groupby_state_year()
+
+
