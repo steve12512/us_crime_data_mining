@@ -72,7 +72,7 @@ def get_peace_sane_unarmed():
 
 
 #START OF AGGREGATION
-mental_percentage = get_mental_illness()
-mental_armed_percentage = get_armed_mental_illness()
+mental = get_mental_illness()
+mental_armed = get_armed_mental_illness()
 mental_toygun = get_mental_toygun()
 peace_sane_unarmed = get_peace_sane_unarmed()
