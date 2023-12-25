@@ -11,8 +11,6 @@ shootings = pd.read_csv('shootings.csv')
 population = pd.read_csv('us_pop_by_state.csv')
 
 
-
-
 #defining functions we will be using in order to create a datacube
 #the functions below return dataframe objects
 
@@ -88,6 +86,14 @@ def get_color():
 
 #the functions below return dataframes that will be used for creating the datacube
 
+def create_dictionary():
+    #this function creates a dictionary to map state code to state population
+    a = dict(zip(population['state_code'], population['2020_census']))
+
+    return a
+
+
+
 def groupby_state_year():
     #in this function we will be using the groupby method on the state and year attributes. first obj is unordered,2nd is ordered by state and 3rd is ordered by date
     #group by state and year to see where most incidents occured
@@ -98,19 +104,26 @@ def groupby_state_year():
     shootings2 = pd.merge(shootings2, population, left_on = 'state', right_on = 'state_code', how= 'left')
     state_year = shootings2.groupby(['state_x', 'year']).size().reset_index(name='incidents_per_state_per_year')
 
+    #get a dictionary to map state codes to state populations
+    dictionary = create_dictionary()
+
+    #then, use the dict and append the values to a new column
+    state_year['state_pop'] = state_year['state_x'].map(dictionary)
+
     #now we want to take the above groupby and calculate the incidents per 100k of its population
-    state_year['per 100k of its population'] = state_year['incidents_per_state_per_year'] / 
+    state_year['per 100k of its population'] = state_year['incidents_per_state_per_year'] / state_year['state_pop'] * 100000
 
-
-    print(state_year.head(5))
+    #sort values based on incidents per 100k inhabitants
+    state_year.sort_values(by = 'per 100k of its population', ascending = False)
+    print('state year', state_year.head(5))
 
     #take the above groupby and order by count descending, to see which state remains the most violent one
     stateord_year = state_year.sort_values(by = 'incidents_per_state_per_year', ascending = False)
-    print(stateord_year.head(5))
--=09--
+    print('order by state, year ', stateord_year.head(5))
+
     #this time, order by year
     state_yearord = state_year.sort_values(by = 'year', ascending= False)
-    print(state_yearord.head(5))
+    print('state, order by year', state_yearord.head(5))
 
     return state_year, stateord_year, state_yearord
 
@@ -130,6 +143,7 @@ df = shootings.copy()
 
 #add a year column
 df['year'] = pd.to_datetime(df['date']).dt.year
+
 
 
 #START OF AGGREGATION
