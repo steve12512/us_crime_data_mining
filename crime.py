@@ -6,9 +6,11 @@ import numpy as np
 shootings = pd.read_csv('shootings.csv')
 
 #defining functions we will be using in order to create a datacube
+#the functions below return dataframe objects
 
 def get_mental_illness():
-    #used for finding the percentage of police shootings where the suspect has shown signs of mental illness
+    #used for getting a dataframe of the police shootings where the suspect has shown signs of mental illness
+
     #copy the file into the one which we will be using for procedures
     shootings2 = shootings.copy()
 
@@ -20,8 +22,9 @@ def get_mental_illness():
     return var
 
 def get_armed_mental_illness():
-    #here we will be getting the percentage of shot suspects have have shown signs of mental illness whilst being armed
-    #cope the original dataframe in order to do procedures
+    #here we will be getting a dataframe of shot suspects have have shown signs of mental illness whilst being armed
+
+    #copy the original dataframe in order to do procedures
     shootings2 = shootings.copy()
 
     armed_mental = shootings2[(shootings2['signs_of_mental_illness'] == True) & (shootings2['arms_category'] == 'Guns')]
@@ -31,7 +34,7 @@ def get_armed_mental_illness():
 
 
 def get_mental_toygun():    
-    #here we will find the number of shot suspects that were mentally ill and had only a toygun
+    #here we will get a dataframe consisting of shot suspects that were mentally ill and had only a toygun
 
     #copy the original dataframe
     shootings2 = shootings.copy()
@@ -74,6 +77,8 @@ def get_color():
     print('Black and Hispanic people make up ', percentage, ' of the dataset')
     print('Again we cannot reach any conclusion that indicates a racial motivation to lie within the general tendecy.')
     return var
+
+#the functions below return dataframes that will be used for creating the datacube
 
 def groupby_state_year():
     #in this function we will be using the groupby method on the state and year attributes. first obj is unordered,2nd is ordered by state and 3rd is ordered by date
