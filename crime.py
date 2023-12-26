@@ -114,22 +114,24 @@ def groupby_state_year():
     #now we want to take the above groupby and calculate the incidents per 100k of its population
     state_year['per 100k of its population'] = state_year['incidents_per_state_per_year'] / state_year['state_pop'] * 100000
 
-    #sort values based on incidents per 100k inhabitants
-    state_year = state_year.sort_values(by = 'per 100k of its population', ascending = False)
-
     #take the above groupby and order by count descending, to see which state remains the most violent one
     stateord_year = state_year.sort_values(by = 'incidents_per_state_per_year', ascending = False)
 
     #this time, order by year
-    state_yearord =  state_year.sort_values(by = 'year', ascending= False)
+    state_yearord =  state_year.sort_values(by =['year','per 100k of its population'], ascending= False)
+
+    #sort values based on incidents per 100k inhabitants
+    state_year = state_year.sort_values(by = 'per 100k of its population', ascending = False)
+
+
 
     #map state codes to state names so we have more beuatiful data
     map_state_codes(state_year,stateord_year, state_yearord, state_dictionary)
+    modify_dataframes(state_year, stateord_year, state_yearord)
    
-   
-    print('state year\n', state_year.head(30))
-    print('order by state, year ', stateord_year.head(5))
-    print('state, order by year', state_yearord.head(5))
+    print('\n police shootings grouped by; state, year, sorted per 100k of its population\n', state_year.head(30))
+    print('\npolice shootings grouped by;state, year, sorted by number of state incidents \n', stateord_year.head(30))
+    print('\npolice shootings grouped by; state, year,sorted by year and then sorted by incidents per 100k of each state\'s population  \n', state_yearord.head(30))
 
     return state_year, stateord_year, state_yearord
 
@@ -141,10 +143,19 @@ def map_state_codes(a,b,c, f):
     c['state_x'] = c['state_x'].map(f)
     return None
 
+def get_female():
+    #this function returns a dataframe where the victims were women
+    var = shootings[shootings['gender'] == 'F']
+    return var
 
 
-
-
+def modify_dataframes(a,b,c):
+    #drops unnecessary columns for each dataframe
+    a.drop(['incidents_per_state_per_year', 'state_pop'], axis = 1, inplace = True)
+    b.drop('per 100k of its population', axis = 1, inplace = True)
+    c.drop('state_pop', axis =1, inplace = True)
+    
+    return None
 
 
 
@@ -166,6 +177,9 @@ df = shootings.copy()
 #add a year column
 df['year'] = pd.to_datetime(df['date']).dt.year
 
+#mental == df where people showed signs of mental illness
+#armed == df where people were armed
+#color == df where people are black or hispanic
 
 
 #START OF AGGREGATION
@@ -174,7 +188,7 @@ mental_armed = get_armed_mental_illness()
 mental_toygun = get_mental_toygun()
 peace_sane_unarmed = get_peace_sane_unarmed()
 color = get_color()
-
+female = get_female()
 
 #START OF CREATING THE DATACUBE
 
