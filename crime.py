@@ -146,6 +146,9 @@ def map_state_codes(a,b,c, f):
 def get_female():
     #this function returns a dataframe where the victims were women
     var = shootings[shootings['gender'] == 'F']
+    print('\n percentage of female shootings is; ', len(var) / len(shootings) * 100, '%')
+    print('\n of which ', len(var[var['armed'] == 'gun']) / len(var) * 100, ' were armed with guns \n ')
+    print('whereas men, whose shootings make up 95,46%\ of the dataset, had an armed with guns percentage of; ', len(shootings[(shootings['gender'] == 'M') & (shootings['armed'] == 'gun')]) / len(shootings[(shootings['gender'] == 'M')]) * 100, '%\n')
     return var
 
 
