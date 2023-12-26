@@ -153,7 +153,7 @@ def modify_dataframes(a,b,c):
     #drops unnecessary columns for each dataframe
     a.drop(['incidents_per_state_per_year', 'state_pop'], axis = 1, inplace = True)
     b.drop('per 100k of its population', axis = 1, inplace = True)
-    c.drop('state_pop', axis =1, inplace = True)
+    c.drop(['state_pop','incidents_per_state_per_year'], axis =1, inplace = True)
     
     return None
 
