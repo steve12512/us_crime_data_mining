@@ -160,6 +160,20 @@ def modify_dataframes(a,b,c):
     
     return None
 
+def groupby_race_state_flee():
+    #this functions does a group by race, state and whether or not the suspect was fleeing
+    race_state_flee = df.groupby(['race','state','flee'])
+    print('\ngrouped by race, state, and whether or not the suspect attempted to flee \n ', race_state_flee.head(20))
+
+    return race_state_flee
+
+def groupby_mental_threat_arms():
+    #this function returns a groupby whether or not the suspect had shown signs of mentall illness, was a threat and whether or not he/she was armed
+    
+    mental_threat_arms = df.groupby(['signs_of_mental_illness', 'threat_level', 'arms_category'])
+    print('\n grouped by whether or not the suspcet had shown signs of mental illness, his threat level and his arms category', mental_threat_arms.head(30))
+
+    return mental_threat_arms
 
 
 
@@ -197,5 +211,5 @@ female = get_female()
 
 #state and year groupbys
 state_year, stateORD_year, state_yearORD = groupby_state_year()
-
-
+race_state_flee = groupby_race_state_flee()
+mental_threat_arms = groupby_mental_threat_arms()
