@@ -87,7 +87,7 @@ def get_color():
 #the functions below return dataframes that will be used for creating the datacube
 
 def create_dictionaries():
-    #this function creates a dictionary to map state code to state population
+    #this function creates a dictionary to map state code to state population and another to map state code to state name
     a = dict(zip(population['state_code'], population['2020_census']))
     b = dict(zip(population['state_code'], population['state']))
 
@@ -213,3 +213,5 @@ female = get_female()
 state_year, stateORD_year, state_yearORD = groupby_state_year()
 race_state_flee = groupby_race_state_flee()
 mental_threat_arms = groupby_mental_threat_arms()
+
+
