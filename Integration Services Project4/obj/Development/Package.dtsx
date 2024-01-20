@@ -1,55 +1,95 @@
 <?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="1/9/2024 9:19:17 PM"
+  DTS:CreationDate="1/5/2024 7:05:44 PM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="DESKTOP-F11G3CL"
-  DTS:CreatorName="DESKTOP-F11G3CL\akisp"
-  DTS:DTSID="{05A2CD3D-5C64-4AD1-A7C5-CB7A25A8688D}"
+  DTS:CreatorComputerName="LAPTOP-CSH9QGAS"
+  DTS:CreatorName="LAPTOP-CSH9QGAS\steve"
+  DTS:DTSID="{BEF13907-4E50-4654-A4C1-C188DEB60130}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5397.1"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{248A60D3-8E81-45E6-82BD-2B400E3A0A9A}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{CB33C53C-CCA2-4800-979A-FA0990E4254D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{FB9C60A8-7828-4145-994B-EDC43725D6F6}"
+      DTS:DTSID="{B5504579-5C45-4705-839A-8A28ADF104EA}"
       DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Trust Server Certificate=True;Application Name=SSIS-Package-{FB9C60A8-7828-4145-994B-EDC43725D6F6}databaseshootings.database.windows.net.shootingsdatabase.shootings;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB9PN/3/V97Le3XSG0frK2vK2cRYTNaxLznPe9MfEiLKAAAAAAOgAAAAAIAACAAAADIRkK9phRU4c3ZhsJ82uN9e6G0Qx5XqUj8CJnRwUwVdSAAAAAhHE6en+a20g8c0Ncay7U8kRi8QvAD6Qsm0LLBCnvuWEAAAABK5gKUHGb895DHsFUP5WU7ObGAytjmEnWnKGyXk4p3Hq7khMgQ9P3kv+khbjVACtSJtL4bt32LYlnRzT+IHeWo</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{B5504579-5C45-4705-839A-8A28ADF104EA}databaseshootings.database.windows.net.shootingsdatabase.shootings;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 1]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{03D4302C-A73F-4294-8B0C-EF7BB0FE26E7}"
+      DTS:DTSID="{1216A68E-B26C-4312-909C-B3E13BA37541}"
       DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{03D4302C-A73F-4294-8B0C-EF7BB0FE26E7}databaseshootings.database.windows.net.shootingsdatabase.shootings 1;">
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{1216A68E-B26C-4312-909C-B3E13BA37541}databaseshootings.database.windows.net.shootingsdatabase.shootings 1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABboonDZx240++B07pqqBrzrEhUI4unj+PTZ1KLs6RBmAAAAAAOgAAAAAIAACAAAACnqV8yP/ZHUnntqgDRYYQslovtHTkl7i5m9ADt2LjA1iAAAABjDhGDiXkQB3WrLMy5b3iwjV31q4hNprU8tmXEMJULLUAAAADS49o1b3R8qfiMpkzkom1ipiZrdLK/lyu0GIivBptK2+R41JwOMQQWNgDwpMnEWQJKZXWiuxQCsOzGvR2NwrFX</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACBCrtxOaGoewPxVr+XLMTGu3pO4MYZm4S/d9z5Gid21gAAAAAOgAAAAAIAACAAAAA3S/Esp2pksx7Rp1J+e2XfqWKB3o3QnPoHrxXWhyHQ0CAAAABxW9EUuI9LIsp15jF0t8lyXr55942/HFHs8Dr3oWEvQ0AAAAAAapdCT+tSgo/7FlaMRaruXSysFT+JJhDovBWgRRcBYT+sZr5UnAmTxvbjFBWkpNBOMSzBNp3JNqvHeBJ9NTgw</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C1D886CC-7DF9-4A0E-8DDA-5B6837F89060}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{C1D886CC-7DF9-4A0E-8DDA-5B6837F89060}databaseshootings.database.windows.net.shootingsdatabase.shootings 2;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABa3nMOcW/Pfm6mqQbHqszU6TXirquZ8yfMur+s5sFikQAAAAAOgAAAAAIAACAAAADmBSo9CZs6HgdNbfMaCGK3BQgWyaFi/q1FbeL98JyoiyAAAABE+avYmpKbC1TUGxm/HvO4nL0Zs7YSS9jyi12qDWC0F0AAAAAcjmeOmymZyL0r2m/dNRQbePH8MsUjlwM0+sN8e7tymTm2vTopdUtr5mC7fxC68u95EjlKa5a75MCezAjZvMjh</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{ACEFACEE-A903-4C4E-8D9B-306AD35478B8}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Trust Server Certificate=True;Application Name=SSIS-Package-{ACEFACEE-A903-4C4E-8D9B-306AD35478B8}databaseshootings.database.windows.net.shootingsdatabase.shootings 3;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABJyumRTx2cxUSW2MTtfK7iYzdwRpupy2yqUqeGooj3sgAAAAAOgAAAAAIAACAAAAA0irWlf4UFiFc3/X95DGk07PsADRGavDMHlpH0UN+CUCAAAACMIY7OlXagoU79CvvQ7zdMQ0OxFZaXmKZGGayRHry4r0AAAABaMbYjw37yvVwo9FqTNtl71GbqKdJqe5w3btmk17CuzKsiM4dErFhe63pVAkl5dysYqtg/xcZkRCK2hIus+HrU</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 4]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{AFC0F25A-D9CD-434E-87FB-221784539DA9}databaseshootings.database.windows.net.shootingsdatabase.shootings 4;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABbt1opb3M4cODM0QQS+ZxJhVswDkl0XXHnPeCYEP41sgAAAAAOgAAAAAIAACAAAAB8i/+/Lxk4U0V5keCyzQnT7yqPph+KHzlMnYu7urLKhCAAAABBpGvV437Yk2lixMKQ7ry08wJJW65GNaTQP36Mt0PWREAAAACs/vtgn3PhycdFk9xkbYbcWBCuqampRyb2qh/BsVNtoZ/kLm5bqfIqywjQuV6bz5fi0dJoaEdsP7wtF9dzzrMK</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{52D4024A-541D-40EF-B027-9F7CD2C57FA0}"
+      DTS:DTSID="{537B4C72-AF0C-4FBB-BDEC-E632A0774EEB}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -60,137 +100,142 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\akisp\Documents\ΔΑΜΙΑΝΟΣ\ΔΕΔΟΜΕΝΑ SHOOTINGS\shootings.csv">
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="2"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{7F8565C4-B038-435C-83FC-56FB0DE72DED}"
+              DTS:DTSID="{91297B15-1CBA-4FB1-8352-F83A3562579E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="32"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="name"
-              DTS:DTSID="{6139CB51-E235-445D-B8B2-77CE22E05437}"
+              DTS:DTSID="{F89CD80A-9A8F-4C16-AA9F-EEB472650028}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="7"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{A3CBFF46-6DFE-45F7-B4AC-1BEC72215A23}"
+              DTS:DTSID="{5E0E7EFD-D6F8-4270-868A-40CD3400E02E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="16"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="manner_of_death"
-              DTS:DTSID="{940DCA48-657F-4F38-972C-108702547532}"
+              DTS:DTSID="{3547410C-9E1D-4960-B8FD-577B71BECF6C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="32"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="armed"
-              DTS:DTSID="{FD6DF367-0C72-43CB-9CD7-E08D009A4210}"
+              DTS:DTSID="{FB63A5CE-516F-4F8F-B973-E6730CEB41F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="4"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="age"
-              DTS:DTSID="{0EA67875-60C7-4CB9-9F33-61D97C796078}"
+              DTS:DTSID="{756CAB61-230C-455D-8ADE-AA5BB7E155B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="1"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="gender"
-              DTS:DTSID="{7FFB4BB4-A06A-4723-99C9-436934FD2A65}"
+              DTS:DTSID="{0F76F3FC-AC6D-4772-B328-B8E991BD68B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="8"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="race"
-              DTS:DTSID="{ECAC4444-3BDC-43F2-B25A-58D83721BAA5}"
+              DTS:DTSID="{C9BF76A6-9941-48B0-98BB-8EBD89618A10}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="30"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="city"
-              DTS:DTSID="{E1C773D9-38C1-4C45-9510-2BF4DCAA4E55}"
+              DTS:DTSID="{4EDA839C-B4CE-4D09-8183-3FA552BCC497}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="2"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="state"
-              DTS:DTSID="{D259B86E-4229-4D60-A181-CB4A9AF85621}"
+              DTS:DTSID="{31C79234-5D19-4DA9-9F2B-3A918D422649}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="signs_of_mental_illness"
-              DTS:DTSID="{59F0DA6D-F03A-41BF-B101-719D2B43E73B}"
+              DTS:DTSID="{8A1EFE06-CA32-4ECC-A959-0D4E61142606}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="12"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="threat_level"
-              DTS:DTSID="{B99E7772-0C41-48CB-8733-751A6C824105}"
+              DTS:DTSID="{6C5B4EBE-66BC-49B7-8484-641F75C7F4C2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="flee"
-              DTS:DTSID="{CC95DDEC-8C54-4ECA-A8D7-C07F1D0EE186}"
+              DTS:DTSID="{0EBE040F-517E-4E70-9DCD-02C0862950B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="body_camera"
-              DTS:DTSID="{F7B4A5E4-FC3A-4E89-9608-02887D1E8C1C}"
+              DTS:DTSID="{2E1D309D-9395-495F-B92E-40312CED0684}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="21"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="arms_category"
-              DTS:DTSID="{303321B9-E2C7-4E02-81BB-A59DF6F9156D}"
+              DTS:DTSID="{A2EC8EE5-8A5E-46BB-99D8-5515C656D1D0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -199,8 +244,161 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{858194EB-B795-4B76-861D-B9CF86A43A7D}"
+      DTS:DTSID="{201712AD-647D-4F1C-B8B8-6950F1881E42}"
       DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{FB9E83D0-099D-4F93-9CA6-F0FA486B7E64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{C49C149E-8B90-450A-B223-5218106E65EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{013109AD-9860-458C-BF56-F113D1947C4F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{ED2356F0-E876-45B9-8D3D-65070221E3E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{26E31D14-0FDA-4F5D-84F1-6A6501B015F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{94DCB589-628E-4D5B-8302-0E2E58D2A7F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{C2FC8CE5-12CD-4356-A8CC-654FC388581A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{F7910F38-266E-4425-8EE2-484B1B9CE1D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{DB0EDD3A-21F9-416E-AE76-076951B94E20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{A818467B-5901-4229-B0FB-80616B3B4C0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{47B05ECB-E511-4B63-A223-015E919D84DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{51321B1C-55CA-4F06-81F6-A8D2AEC43FDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{89ADDB86-68A5-4CBE-A49B-771574236D2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{A7B6926D-E14B-470C-98CA-05C7391F05C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{7A5EE335-59E2-4B09-B0F2-ABFCC2AB58BA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Akis]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0A73CCCF-BC1F-4248-96A0-3F042929036A}"
+      DTS:ObjectName="Flat File Connection Manager Akis">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -218,7 +416,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{35221547-CB26-4E91-B187-E0E5FA0CEC30}"
+              DTS:DTSID="{C380D587-6B21-44BA-8C41-B2942542FEBB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -227,7 +425,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="name"
-              DTS:DTSID="{AC844B46-8F33-4E21-844A-CF4F38B47A96}"
+              DTS:DTSID="{587E1F69-99C2-4D47-AEFD-D0476CE40942}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -235,7 +433,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{46C358F6-CEFD-4890-BDE7-E648C0B4A360}"
+              DTS:DTSID="{5FFFEC3E-F0EB-4412-AD0B-F24B9E63DB73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -244,7 +442,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="manner_of_death"
-              DTS:DTSID="{8F1C0105-5F1A-4E6D-80F7-C25778FF6EAA}"
+              DTS:DTSID="{C7ED856D-A598-46E6-9191-3F6F89D752B0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -253,7 +451,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="armed"
-              DTS:DTSID="{5980128C-3722-4FF6-9124-2911C3FBE648}"
+              DTS:DTSID="{45DEC2C0-DB8E-4EE4-8553-A0FA8CC14B0C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -261,7 +459,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="age"
-              DTS:DTSID="{BD1DF179-CA76-41F2-B009-8FCC031C3FAE}"
+              DTS:DTSID="{49BA0BCF-1DB9-4772-A03C-D8FA8B9D7136}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -270,7 +468,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="gender"
-              DTS:DTSID="{7E5EB5B8-4CC9-476C-890B-2EBC09BD1BB6}"
+              DTS:DTSID="{560F4F3A-DA84-4A20-9718-4EB82716100B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -279,7 +477,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="race"
-              DTS:DTSID="{D02A921A-38D6-41D9-9CCD-6CAE138C941C}"
+              DTS:DTSID="{81B0872F-08BE-4A2B-81DD-30914C70D7B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -288,7 +486,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="city"
-              DTS:DTSID="{FE4A33B1-0371-46BD-A25E-E2EF04236380}"
+              DTS:DTSID="{756DADB7-AA6E-4CDC-AF53-0B5DA01EE0F9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -297,7 +495,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="state"
-              DTS:DTSID="{3924AB43-2B73-486B-9C4F-9D088B8B06BD}"
+              DTS:DTSID="{7A4D6C97-B6AE-4425-AC04-0BED9DB22C04}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -305,7 +503,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="signs_of_mental_illness"
-              DTS:DTSID="{0C3EA2C6-0006-468E-842B-58930A01E57C}"
+              DTS:DTSID="{C3B4DB37-DB72-4357-A934-0576FEC3A166}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -314,7 +512,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="threat_level"
-              DTS:DTSID="{3424973C-5537-4B9D-88F3-F397D73B4B47}"
+              DTS:DTSID="{5A4393F2-A620-4959-A86C-12E11E1DD656}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -323,7 +521,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="flee"
-              DTS:DTSID="{E6C8D42A-F6D5-4162-8588-98F9C307F256}"
+              DTS:DTSID="{BE811A96-C021-4838-B2A4-D3EE152F70CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -331,7 +529,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="body_camera"
-              DTS:DTSID="{E87561D9-610B-4C44-965A-C29ED4D9D7B3}"
+              DTS:DTSID="{D64CA044-0D3D-4627-A6B3-9C5C8B6F7409}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -340,7 +538,160 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="arms_category"
-              DTS:DTSID="{272A4482-C897-4315-BE5E-7E4C358D8C61}"
+              DTS:DTSID="{F27A9A8C-6545-44E0-9623-DF6BFCA22255}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2E98B53B-3692-4FDB-A57D-E734B2F0F9DB}"
+      DTS:ObjectName="Flat File Connection Manager2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{D4FB379A-312D-4900-B706-DBA83A876438}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{3206FA24-F36A-4032-8ACE-0D82C09234D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{2E4D1D96-087E-481A-A9F9-B5C9E390844A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{10870247-EC12-433C-8753-3A53FA07AE7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{35B9F1CC-414E-4914-B3D6-9328D458EE52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{A608934D-307E-4339-9C23-E040F90D3A90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{96B5E189-83B8-4180-829B-4B5C1A62CE9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{441F29EC-4143-46EB-B6FC-B95D68134E8B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{9A0B169E-AFAC-4EDD-B447-5F8CF389CD5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{7373E84C-D01E-4FDB-A978-5CDA60D9EABC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{F83FAACC-CE90-4558-B4EA-66F24B7DD040}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{F5551EB4-A643-428B-B2EA-44F80410F8E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{16C5E18B-937F-425F-99C6-32B91CBE588D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{53A6F257-5AC6-4794-9BBC-6A4DCD7A3E1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{51FF7571-0BB3-45B3-955B-18C8C985F10C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -353,7 +704,7 @@
       DTS:refId="Package\Import CSV"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{778FB304-4E84-4E57-9262-DD1C28F52D39}"
+      DTS:DTSID="{A9A653D2-8EB5-403A-B74B-D12C2E94545A}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Import CSV"
@@ -377,7 +728,7 @@
                   description="The Destination database table name."
                   expressionType="Notify"
                   name="TableOrViewName"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Shootings"</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."shootings_table"</property>
                 <property
                   dataType="System.Int32"
                   description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -392,7 +743,7 @@
                   dataType="System.Boolean"
                   description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
                   expressionType="Notify"
-                  name="UseBulkInsertWhenPossible">false</property>
+                  name="UseBulkInsertWhenPossible">true</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.ADONETDestination</property>
@@ -400,8 +751,8 @@
               <connections>
                 <connection
                   refId="Package\Import CSV\ADO NET Destination.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 1]"
+                  connectionManagerID="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 4]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -414,7 +765,9 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[id]"
-                      cachedDataType="i2"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="id"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[id]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
@@ -422,13 +775,15 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="32"
+                      cachedLength="50"
                       cachedName="name"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]" />
                     <inputColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[date]"
-                      cachedDataType="date"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="date"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[date]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]" />
@@ -436,7 +791,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[manner_of_death]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="16"
+                      cachedLength="50"
                       cachedName="manner_of_death"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[manner_of_death]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]" />
@@ -444,13 +799,15 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[armed]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="32"
+                      cachedLength="50"
                       cachedName="armed"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[armed]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]" />
                     <inputColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[age]"
-                      cachedDataType="r4"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="age"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[age]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]" />
@@ -458,7 +815,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[gender]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="1"
+                      cachedLength="50"
                       cachedName="gender"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[gender]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]" />
@@ -466,7 +823,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[race]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="8"
+                      cachedLength="50"
                       cachedName="race"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[race]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]" />
@@ -474,7 +831,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[city]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="30"
+                      cachedLength="50"
                       cachedName="city"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[city]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
@@ -482,7 +839,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[state]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="2"
+                      cachedLength="50"
                       cachedName="state"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[state]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
@@ -496,7 +853,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[threat_level]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="12"
+                      cachedLength="50"
                       cachedName="threat_level"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[threat_level]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]" />
@@ -504,7 +861,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[flee]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="11"
+                      cachedLength="50"
                       cachedName="flee"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[flee]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]" />
@@ -518,7 +875,7 @@
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[arms_category]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="21"
+                      cachedLength="50"
                       cachedName="arms_category"
                       externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[arms_category]"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]" />
@@ -527,50 +884,53 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[id]"
-                      dataType="i2"
+                      dataType="wstr"
+                      length="50"
                       name="id" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
                       dataType="wstr"
-                      length="32"
+                      length="50"
                       name="name" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[date]"
-                      dataType="dbTimeStamp"
+                      dataType="wstr"
+                      length="50"
                       name="date" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[manner_of_death]"
                       dataType="wstr"
-                      length="16"
+                      length="50"
                       name="manner_of_death" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[armed]"
                       dataType="wstr"
-                      length="32"
+                      length="50"
                       name="armed" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[age]"
-                      dataType="r4"
+                      dataType="wstr"
+                      length="50"
                       name="age" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[gender]"
                       dataType="wstr"
-                      length="1"
+                      length="50"
                       name="gender" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[race]"
                       dataType="wstr"
-                      length="8"
+                      length="50"
                       name="race" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[city]"
                       dataType="wstr"
-                      length="30"
+                      length="50"
                       name="city" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[state]"
                       dataType="wstr"
-                      length="2"
+                      length="50"
                       name="state" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[signs_of_mental_illness]"
@@ -579,12 +939,12 @@
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[threat_level]"
                       dataType="wstr"
-                      length="12"
+                      length="50"
                       name="threat_level" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[flee]"
                       dataType="wstr"
-                      length="11"
+                      length="50"
                       name="flee" />
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[body_camera]"
@@ -593,7 +953,7 @@
                     <externalMetadataColumn
                       refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[arms_category]"
                       dataType="wstr"
-                      length="21"
+                      length="50"
                       name="arms_category" />
                   </externalMetadataColumns>
                 </input>
@@ -645,8 +1005,8 @@
               <connections>
                 <connection
                   refId="Package\Import CSV\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager Akis]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager Akis]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -656,10 +1016,12 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
-                      dataType="i2"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
                       name="id"
                       truncationRowDisposition="FailComponent">
@@ -681,7 +1043,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[name]"
-                      length="32"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]"
                       name="name"
                       truncationRowDisposition="FailComponent">
@@ -698,10 +1060,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
-                      dataType="date"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
                       name="date"
                       truncationRowDisposition="FailComponent">
@@ -723,7 +1087,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[manner_of_death]"
-                      length="16"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]"
                       name="manner_of_death"
                       truncationRowDisposition="FailComponent">
@@ -745,7 +1109,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[armed]"
-                      length="32"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]"
                       name="armed"
                       truncationRowDisposition="FailComponent">
@@ -762,10 +1126,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
-                      dataType="r4"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
                       name="age"
                       truncationRowDisposition="FailComponent">
@@ -787,7 +1153,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
-                      length="1"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
                       name="gender"
                       truncationRowDisposition="FailComponent">
@@ -809,7 +1175,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[race]"
-                      length="8"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]"
                       name="race"
                       truncationRowDisposition="FailComponent">
@@ -831,7 +1197,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
-                      length="30"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
                       name="city"
                       truncationRowDisposition="FailComponent">
@@ -853,7 +1219,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
-                      length="2"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
                       name="state"
                       truncationRowDisposition="FailComponent">
@@ -895,7 +1261,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[threat_level]"
-                      length="12"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]"
                       name="threat_level"
                       truncationRowDisposition="FailComponent">
@@ -917,7 +1283,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[flee]"
-                      length="11"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]"
                       name="flee"
                       truncationRowDisposition="FailComponent">
@@ -959,7 +1325,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[arms_category]"
-                      length="21"
+                      length="50"
                       lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]"
                       name="arms_category"
                       truncationRowDisposition="FailComponent">
@@ -1099,7 +1465,34 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{cc575627-b4ad-49b8-82e1-1293859724cc}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1216A68E-B26C-4312-909C-B3E13BA37541}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [shootingsdatabase].[dbo].[shootings_table];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{3262589B-E40A-4E1D-B381-1294A223AE6C}"
+      DTS:From="Package\Truncate Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import CSV" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -1111,11 +1504,37 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="136,42"
           Id="Package\Import CSV"
-          TopLeft="378.5,81.5" />
+          TopLeft="474.666649215752,51.1000001239777" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Truncate Table"
+          TopLeft="211.666649215752,54.1000001239777" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="364.666649215752,73.6000001239777">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110,0"
+              Start="0,0"
+              End="102.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="102.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1125,27 +1544,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="186,42"
+          Size="205,42"
           Id="Package\Import CSV\ADO NET Destination"
-          TopLeft="640,119" />
+          TopLeft="592.5,39.5" />
         <NodeLayout
-          Size="156,42"
+          Size="170,42"
           Id="Package\Import CSV\Flat File Source"
-          TopLeft="380.5,121.5" />
+          TopLeft="188.5,80.5" />
         <EdgeLayout
           Id="Package\Import CSV.Paths[Flat File Source Output]"
-          TopLeft="536.5,141.25">
+          TopLeft="358.5,101.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="103.5,0"
+              EndConnector="234,-41"
               Start="0,0"
-              End="96,0">
+              End="226.5,-41">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="96,0" />
+                    End="113,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="113,0"
+                    Point2="117,0"
+                    Point3="117,-4" />
+                  <mssgle:LineSegment
+                    End="117,-37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="117,-37"
+                    Point2="117,-41"
+                    Point3="121,-41" />
+                  <mssgle:LineSegment
+                    End="226.5,-41" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
