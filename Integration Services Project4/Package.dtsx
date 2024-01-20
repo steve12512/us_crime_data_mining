@@ -11,66 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="49"
-  DTS:VersionGUID="{B912E741-6966-4379-B889-603CD46BBB01}">
+  DTS:VersionBuild="67"
+  DTS:VersionGUID="{2BFB23E8-E24D-4AC7-B6B7-F029119A67B6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{B5504579-5C45-4705-839A-8A28ADF104EA}"
-      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{B5504579-5C45-4705-839A-8A28ADF104EA}databaseshootings.database.windows.net.shootingsdatabase.shootings;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 1]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{1216A68E-B26C-4312-909C-B3E13BA37541}"
-      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{1216A68E-B26C-4312-909C-B3E13BA37541}databaseshootings.database.windows.net.shootingsdatabase.shootings 1;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADEvpxq12VmTRdnv5M7dKuzrOOnF++5Z/Wj2eZ3RtPKFQAAAAAOgAAAAAIAACAAAADcEpZWfu1EDD81ncAqysBswXOnE6yRUcmeUWkUMtBJSyAAAAC/Ipy/fRK5tGXvJWenG2b9096NRIMZviZhsFqs2bS5hEAAAADd0HGWrTcCUz9JW8pUWDxvYenQ4K+e7+Zh7EbqZ0o9wkVA/hh8wMred496GwElpQUO0ABrdn1mouew+P1jA6RF</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 2]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{C1D886CC-7DF9-4A0E-8DDA-5B6837F89060}"
-      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{C1D886CC-7DF9-4A0E-8DDA-5B6837F89060}databaseshootings.database.windows.net.shootingsdatabase.shootings 2;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC0wS9T2gkyOO+eTMgvavNIk5pbFQb5nFeYNnpOk1z4mgAAAAAOgAAAAAIAACAAAABcNt3WvHdmr4SAT5VyfzEqmkJZ7itxv8MDHU+fWzolJCAAAABIr4/8khENdxIzh2iq9GeUeRQI4L3e8ge5oV2IFirmWkAAAABMuwHcVw2Osc1o3ABVvWfTQ+4j/AvYFjNYI/UyqRCnoWC9Gt1w82HpBXq4duNO+CpcCZd3eqXZF8PD660JhToV</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 3]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{ACEFACEE-A903-4C4E-8D9B-306AD35478B8}"
-      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Trust Server Certificate=True;Application Name=SSIS-Package-{ACEFACEE-A903-4C4E-8D9B-306AD35478B8}databaseshootings.database.windows.net.shootingsdatabase.shootings 3;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAKbKbNR2xT15zqk+g47JcGBKsWieM+pulz2QzehYhEhwAAAAAOgAAAAAIAACAAAADuBp4AZNKknJGf4e4Etq3UJahnDMwpB9EkE8igPFJRrCAAAACP/LgPCVlZDeaJ9c/lE82H2XY99fORcE/Kq289vGcu50AAAABYQ/IZlGoVi4B4JUCfMnZzbILWwE+DzR+j3b8AXUVfWLAAHZhDhwKo737mEkLW6kXuC1JsBGhtSmrsL1nfEj2g</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 4]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
@@ -78,319 +23,11 @@
       DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 4">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{AFC0F25A-D9CD-434E-87FB-221784539DA9}databaseshootings.database.windows.net.shootingsdatabase.shootings 4;">
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Persist Security Info=True;Application Name=&quot;SSIS-Package-{AFC0F25A-D9CD-434E-87FB-221784539DA9}databaseshootings.database.windows.net.shootingsdatabase.shootings 4&quot;;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADBOtUFzOMlsB3/mHGQsRUnRVa4awtZPmeaEXOYwgq7bQAAAAAOgAAAAAIAACAAAABysZZUjy3mR4HVyOIC9WcwEZiejfu6itCgB6MhAZHavyAAAADE5vN2bRs3ft3CeF0JUP7MahTcbZBOtPD0LTptiXMKgUAAAAAGRYp6Nf3UrnYw9NY6hK3UVEVzpz2J7ZvSZDWQnRTEN5c9GlVkUvF2njIk0tm+LgiNOgA82fDCCVgco6HI/U4o</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{537B4C72-AF0C-4FBB-BDEC-E632A0774EEB}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x0022_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="id"
-              DTS:DTSID="{91297B15-1CBA-4FB1-8352-F83A3562579E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="name"
-              DTS:DTSID="{F89CD80A-9A8F-4C16-AA9F-EEB472650028}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{5E0E7EFD-D6F8-4270-868A-40CD3400E02E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="manner_of_death"
-              DTS:DTSID="{3547410C-9E1D-4960-B8FD-577B71BECF6C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="armed"
-              DTS:DTSID="{FB63A5CE-516F-4F8F-B973-E6730CEB41F7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="age"
-              DTS:DTSID="{756CAB61-230C-455D-8ADE-AA5BB7E155B1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="gender"
-              DTS:DTSID="{0F76F3FC-AC6D-4772-B328-B8E991BD68B5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="race"
-              DTS:DTSID="{C9BF76A6-9941-48B0-98BB-8EBD89618A10}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{4EDA839C-B4CE-4D09-8183-3FA552BCC497}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="state"
-              DTS:DTSID="{31C79234-5D19-4DA9-9F2B-3A918D422649}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="signs_of_mental_illness"
-              DTS:DTSID="{8A1EFE06-CA32-4ECC-A959-0D4E61142606}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="threat_level"
-              DTS:DTSID="{6C5B4EBE-66BC-49B7-8484-641F75C7F4C2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="flee"
-              DTS:DTSID="{0EBE040F-517E-4E70-9DCD-02C0862950B9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="body_camera"
-              DTS:DTSID="{2E1D309D-9395-495F-B92E-40312CED0684}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="arms_category"
-              DTS:DTSID="{A2EC8EE5-8A5E-46BB-99D8-5515C656D1D0}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{201712AD-647D-4F1C-B8B8-6950F1881E42}"
-      DTS:ObjectName="Flat File Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="id"
-              DTS:DTSID="{FB9E83D0-099D-4F93-9CA6-F0FA486B7E64}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="name"
-              DTS:DTSID="{C49C149E-8B90-450A-B223-5218106E65EC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{013109AD-9860-458C-BF56-F113D1947C4F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="manner_of_death"
-              DTS:DTSID="{ED2356F0-E876-45B9-8D3D-65070221E3E9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="armed"
-              DTS:DTSID="{26E31D14-0FDA-4F5D-84F1-6A6501B015F4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="age"
-              DTS:DTSID="{94DCB589-628E-4D5B-8302-0E2E58D2A7F9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="gender"
-              DTS:DTSID="{C2FC8CE5-12CD-4356-A8CC-654FC388581A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="race"
-              DTS:DTSID="{F7910F38-266E-4425-8EE2-484B1B9CE1D2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{DB0EDD3A-21F9-416E-AE76-076951B94E20}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="state"
-              DTS:DTSID="{A818467B-5901-4229-B0FB-80616B3B4C0F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="signs_of_mental_illness"
-              DTS:DTSID="{47B05ECB-E511-4B63-A223-015E919D84DE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="threat_level"
-              DTS:DTSID="{51321B1C-55CA-4F06-81F6-A8D2AEC43FDF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="flee"
-              DTS:DTSID="{89ADDB86-68A5-4CBE-A49B-771574236D2F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="body_camera"
-              DTS:DTSID="{A7B6926D-E14B-470C-98CA-05C7391F05C8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="arms_category"
-              DTS:DTSID="{7A5EE335-59E2-4B09-B0F2-ABFCC2AB58BA}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABpmgD6rPXiDyZBrxjc8n3ynGy0AXGro8M2KUsGErODAwAAAAAOgAAAAAIAACAAAABnvtSIpXV42RwxD4ZeKXP3AGHycY/hpgKKbTpL98ifrSAAAACG3DA9Dvbw8MZSTiAJ6LA1yKcqTNBba/jpeJ8gyxqOakAAAAAKrOe39KBgIHwoIfEiK2+OloaxxDIQG7K7yX+mRnH1jEnapwE/kvM4wDk2nxtWIAc9AZzDezKGn6WJiAKCNKgg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -416,7 +53,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{C380D587-6B21-44BA-8C41-B2942542FEBB}"
+              DTS:DTSID="{387BB54D-346D-4EB3-A019-C511877A89F0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -425,7 +62,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="name"
-              DTS:DTSID="{587E1F69-99C2-4D47-AEFD-D0476CE40942}"
+              DTS:DTSID="{BA86B31F-026C-4F4F-B8BB-606CF539BCE2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -433,7 +70,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{5FFFEC3E-F0EB-4412-AD0B-F24B9E63DB73}"
+              DTS:DTSID="{B9393E3C-D2F3-453A-B998-26BDAA4A02CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -442,7 +79,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="manner_of_death"
-              DTS:DTSID="{C7ED856D-A598-46E6-9191-3F6F89D752B0}"
+              DTS:DTSID="{0A1960FC-48D7-4866-B535-381110ABEEE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -451,7 +88,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="armed"
-              DTS:DTSID="{45DEC2C0-DB8E-4EE4-8553-A0FA8CC14B0C}"
+              DTS:DTSID="{71B0129B-0E30-4525-92DD-B3BB493B998B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -459,7 +96,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="age"
-              DTS:DTSID="{49BA0BCF-1DB9-4772-A03C-D8FA8B9D7136}"
+              DTS:DTSID="{3C19924B-C5AB-41F8-AA01-E6EFB8BE0F02}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -468,7 +105,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="gender"
-              DTS:DTSID="{560F4F3A-DA84-4A20-9718-4EB82716100B}"
+              DTS:DTSID="{F4C1C9A4-10C5-42A3-B7A8-4EEC3E997C4D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -477,7 +114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="race"
-              DTS:DTSID="{81B0872F-08BE-4A2B-81DD-30914C70D7B2}"
+              DTS:DTSID="{59229267-7EDD-4A8A-8DC2-10DD489D827D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -486,7 +123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="city"
-              DTS:DTSID="{756DADB7-AA6E-4CDC-AF53-0B5DA01EE0F9}"
+              DTS:DTSID="{1FCD0830-673F-4706-8AA1-DDE01FADA60B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -495,7 +132,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="state"
-              DTS:DTSID="{7A4D6C97-B6AE-4425-AC04-0BED9DB22C04}"
+              DTS:DTSID="{84C18865-44DD-4B1B-B857-9367370EFA3D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -503,7 +140,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="signs_of_mental_illness"
-              DTS:DTSID="{C3B4DB37-DB72-4357-A934-0576FEC3A166}"
+              DTS:DTSID="{80D7A16F-24D3-4214-A116-376B8BB6C71E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -512,7 +149,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="threat_level"
-              DTS:DTSID="{5A4393F2-A620-4959-A86C-12E11E1DD656}"
+              DTS:DTSID="{2DBB8E95-AC92-41DE-9905-96E27AAFCBCB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -521,7 +158,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="flee"
-              DTS:DTSID="{BE811A96-C021-4838-B2A4-D3EE152F70CC}"
+              DTS:DTSID="{BB653C56-88DD-4EB3-88BE-362DA162C1C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -529,7 +166,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="body_camera"
-              DTS:DTSID="{D64CA044-0D3D-4627-A6B3-9C5C8B6F7409}"
+              DTS:DTSID="{ECAC8073-6288-4CA6-9735-943A5B3841FE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -538,160 +175,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="arms_category"
-              DTS:DTSID="{F27A9A8C-6545-44E0-9623-DF6BFCA22255}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager2]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2E98B53B-3692-4FDB-A57D-E734B2F0F9DB}"
-      DTS:ObjectName="Flat File Connection Manager2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x0022_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="id"
-              DTS:DTSID="{D4FB379A-312D-4900-B706-DBA83A876438}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="name"
-              DTS:DTSID="{3206FA24-F36A-4032-8ACE-0D82C09234D6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{2E4D1D96-087E-481A-A9F9-B5C9E390844A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="manner_of_death"
-              DTS:DTSID="{10870247-EC12-433C-8753-3A53FA07AE7A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="armed"
-              DTS:DTSID="{35B9F1CC-414E-4914-B3D6-9328D458EE52}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="age"
-              DTS:DTSID="{A608934D-307E-4339-9C23-E040F90D3A90}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="gender"
-              DTS:DTSID="{96B5E189-83B8-4180-829B-4B5C1A62CE9C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="race"
-              DTS:DTSID="{441F29EC-4143-46EB-B6FC-B95D68134E8B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{9A0B169E-AFAC-4EDD-B447-5F8CF389CD5B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="state"
-              DTS:DTSID="{7373E84C-D01E-4FDB-A978-5CDA60D9EABC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="signs_of_mental_illness"
-              DTS:DTSID="{F83FAACC-CE90-4558-B4EA-66F24B7DD040}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="threat_level"
-              DTS:DTSID="{F5551EB4-A643-428B-B2EA-44F80410F8E9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="flee"
-              DTS:DTSID="{16C5E18B-937F-425F-99C6-32B91CBE588D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="body_camera"
-              DTS:DTSID="{53A6F257-5AC6-4794-9BBC-6A4DCD7A3E1D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="arms_category"
-              DTS:DTSID="{51FF7571-0BB3-45B3-955B-18C8C985F10C}"
+              DTS:DTSID="{462EA764-8C9B-4934-98C1-BDD9D4C3B1ED}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1478,8 +962,110 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{1216A68E-B26C-4312-909C-B3E13BA37541}"
+          SQLTask:Connection="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [shootingsdatabase].[dbo].[shootings_table];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Body Camera Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B4A90972-4673-4330-A33C-12B0625FBE3D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Body Camera Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+          SQLTask:SqlStatementSource="INSERT INTO body_camera_dim (label_body_camera) SELECT DISTINCT [body_camera] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Flee Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2C1AC762-C6C4-418F-8EFD-4B054353E39B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Flee Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+          SQLTask:SqlStatementSource="INSERT INTO flee_dim (label_flee) SELECT DISTINCT [flee] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Mental Ilness Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D3063A92-20BF-4D02-9D57-2C75DDA2CFCB}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Mental Ilness Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+          SQLTask:SqlStatementSource="INSERT INTO signs_of_mental_illness_dim (label_signs_of_mental_illness) SELECT DISTINCT [signs_of_mental_illness] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Race Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C893F0F9-4452-441E-969F-0E4FD52DF768}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Race Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+          SQLTask:SqlStatementSource="INSERT INTO race_dim (label_race) SELECT DISTINCT [race] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update State Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{40AEC16E-A222-465A-B5E0-5AA9B1B614D5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update State Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+          SQLTask:SqlStatementSource="INSERT INTO state_dim (label_state) SELECT DISTINCT [state] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Threat Level Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{88312D67-4364-475D-A0C5-A95D96B9DCC3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Threat Level Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+          SQLTask:SqlStatementSource="INSERT INTO threat_level_dim (label_threat_level) SELECT DISTINCT [threat_level] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -1492,6 +1078,54 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Import CSV" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{6DB5F543-A317-4860-9BE6-797C18C94A9D}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Update Race Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{6D623A02-B22F-4D1A-992F-7F57C107AF43}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update State Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{2BB556EC-1B43-4969-B449-20C10C6435F1}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Update Mental Ilness Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{18CDE742-AC6E-4F54-85CB-5B5C03B5D342}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Update Flee Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{1C5198AF-DB2A-432B-95EF-CA21F70EE570}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Update Threat Level Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{5C0B8601-0740-452B-A233-D07F9DB435F2}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Update Body Camera Dim" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1504,29 +1138,257 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="136,42"
           Id="Package\Import CSV"
-          TopLeft="474.666649215752,51.1000001239777" />
+          TopLeft="360.666649215752,198.100000123978" />
         <NodeLayout
           Size="153,42"
           Id="Package\Truncate Table"
-          TopLeft="211.666649215752,54.1000001239777" />
+          TopLeft="173.666649215752,197.100000123978" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="364.666649215752,73.6000001239777">
+          TopLeft="326.666649215752,218.600000123978">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="110,0"
+              EndConnector="33.9999999999999,0"
               Start="0,0"
-              End="102.5,0">
+              End="26.4999999999999,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="102.5,0" />
+                    End="26.4999999999999,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Update Race Dim"
+          TopLeft="552.5,50.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="407.333315882419,198.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="228.166684117581,-105.600000123978"
+              Start="0,0"
+              End="228.166684117581,-98.1000001239777">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-38.9767442365026" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-38.9767442365026"
+                    Point2="0,-42.9767442365026"
+                    Point3="4,-42.9767442365026" />
+                  <mssgle:LineSegment
+                    End="224.166684117581,-42.9767442365026" />
+                  <mssgle:CubicBezierSegment
+                    Point1="224.166684117581,-42.9767442365026"
+                    Point2="228.166684117581,-42.9767442365026"
+                    Point3="228.166684117581,-46.9767442365026" />
+                  <mssgle:LineSegment
+                    End="228.166684117581,-98.1000001239777" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Update Body Camera Dim"
+          TopLeft="563.5,334.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Update Threat Level Dim"
+          TopLeft="560.5,276.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Update Flee Dim"
+          TopLeft="562.5,218.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Update Mental Ilness Dim"
+          TopLeft="555.5,164.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Update State Dim"
+          TopLeft="552.5,105.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="449.999982549085,198.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="192.000017450915,-50.6000001239777"
+              Start="0,0"
+              End="192.000017450915,-43.1000001239777">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-16.59302330627" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-16.59302330627"
+                    Point2="0,-20.59302330627"
+                    Point3="4,-20.59302330627" />
+                  <mssgle:LineSegment
+                    End="188.000017450915,-20.59302330627" />
+                  <mssgle:CubicBezierSegment
+                    Point1="188.000017450915,-20.59302330627"
+                    Point2="192.000017450915,-20.59302330627"
+                    Point3="192.000017450915,-24.59302330627" />
+                  <mssgle:LineSegment
+                    End="192.000017450915,-43.1000001239777" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="496.666649215752,213.433333457311">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.8333507842481,-27.9333334573111"
+              Start="0,0"
+              End="51.3333507842481,-27.9333334573111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="20.8287535419763,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.8287535419763,0"
+                    Point2="24.8287535419763,0"
+                    Point3="24.8287535419763,-4" />
+                  <mssgle:LineSegment
+                    End="24.8287535419763,-23.9333334573111" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.8287535419763,-23.9333334573111"
+                    Point2="24.8287535419763,-27.9333334573111"
+                    Point3="28.8287535419763,-27.9333334573111" />
+                  <mssgle:LineSegment
+                    End="51.3333507842481,-27.9333334573111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="496.666649215752,224.766666790644">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="65.8333507842481,14.7333332093556"
+              Start="0,0"
+              End="58.3333507842481,14.7333332093556">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="23.7828819823432,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.7828819823432,0"
+                    Point2="27.7828819823432,0"
+                    Point3="27.7828819823432,4" />
+                  <mssgle:LineSegment
+                    End="27.7828819823432,10.7333332093556" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.7828819823432,10.7333332093556"
+                    Point2="27.7828819823432,14.7333332093556"
+                    Point3="31.7828819823432,14.7333332093556" />
+                  <mssgle:LineSegment
+                    End="58.3333507842481,14.7333332093556" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="407.333315882419,240.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="242.666684117581,36.3999998760223"
+              Start="0,0"
+              End="242.666684117581,28.8999998760223">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.8139534379161" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.8139534379161"
+                    Point2="0,14.8139534379161"
+                    Point3="4,14.8139534379161" />
+                  <mssgle:LineSegment
+                    End="238.666684117581,14.8139534379161" />
+                  <mssgle:CubicBezierSegment
+                    Point1="238.666684117581,14.8139534379161"
+                    Point2="242.666684117581,14.8139534379161"
+                    Point3="242.666684117581,18.8139534379161" />
+                  <mssgle:LineSegment
+                    End="242.666684117581,28.8999998760223" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="407.333315882419,240.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="241.166684117581,94.3999998760223"
+              Start="0,0"
+              End="241.166684117581,86.8999998760223">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4186046007068" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.4186046007068"
+                    Point2="0,38.4186046007068"
+                    Point3="4,38.4186046007068" />
+                  <mssgle:LineSegment
+                    End="237.166684117581,38.4186046007068" />
+                  <mssgle:CubicBezierSegment
+                    Point1="237.166684117581,38.4186046007068"
+                    Point2="241.166684117581,38.4186046007068"
+                    Point3="241.166684117581,42.4186046007068" />
+                  <mssgle:LineSegment
+                    End="241.166684117581,86.8999998760223" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
