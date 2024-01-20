@@ -1,0 +1,1600 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/5/2024 7:05:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-CSH9QGAS"
+  DTS:CreatorName="LAPTOP-CSH9QGAS\steve"
+  DTS:DTSID="{BEF13907-4E50-4654-A4C1-C188DEB60130}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{CB33C53C-CCA2-4800-979A-FA0990E4254D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{B5504579-5C45-4705-839A-8A28ADF104EA}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{B5504579-5C45-4705-839A-8A28ADF104EA}databaseshootings.database.windows.net.shootingsdatabase.shootings;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{1216A68E-B26C-4312-909C-B3E13BA37541}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{1216A68E-B26C-4312-909C-B3E13BA37541}databaseshootings.database.windows.net.shootingsdatabase.shootings 1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACNzxcWNQKGqysyZFFSqYQJY+7fqAIItItOIn/++DKRJgAAAAAOgAAAAAIAACAAAAAX9l9fiHD9uf8cmI4FowPepNzeqq2zL8u3QVo0VlftgSAAAACFcYhTMFjDQfSINkU4YGNw1FQ5X58OUWfkx4QzSjUh9kAAAADiMx7DyFIKKx6xm1cwgcCm7uQiE+y9Qs8TqvUJWn3o0l+RpQ4pcOMk9xryTN7Q4ExkQC39UdfLxHVKLJAuQ37p</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C1D886CC-7DF9-4A0E-8DDA-5B6837F89060}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{C1D886CC-7DF9-4A0E-8DDA-5B6837F89060}databaseshootings.database.windows.net.shootingsdatabase.shootings 2;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSsqR4C0W1W6clL2SNENcM5l+Qr096AAppkDMd4Hxq0wAAAAAOgAAAAAIAACAAAAD8Q6ricMFgQrVUQGaj0Z1siAF7Nw3/Wlyk8FdmDd6hNiAAAAC5vEYsiYeDKtPYTbV9j0pdv59MqqE2LitR/st8+B+1QkAAAACnri7DtIXhTdgcAS1TnYQNKiWWhdaUGxc60RoUDrd1Ao/XV7cx3tLA1sF4HLGCaz7NEWb+enuX1yz60AP4zsLY</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{ACEFACEE-A903-4C4E-8D9B-306AD35478B8}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Trust Server Certificate=True;Application Name=SSIS-Package-{ACEFACEE-A903-4C4E-8D9B-306AD35478B8}databaseshootings.database.windows.net.shootingsdatabase.shootings 3;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAQ9lKvKLnVG1IckPPk8JRz6Pw+MWz/gc+dVSzD9jSqoQAAAAAOgAAAAAIAACAAAADq8qSvd8zh2OlkrMAYq5CGkKGZ+c1jnyol1n+NeTbHuSAAAABP7geNH1TBgpLf718Z76boh7qBL2x9Xl0otvG049RFWEAAAABnk2mDI8gqQkBbny9EdiiWX3biStuEv/9iNaJPs2/FPtZHNwR0C6RXwqfiKMuvZDukWu8H62kSQh5T/di8G8VF</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 4]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{AFC0F25A-D9CD-434E-87FB-221784539DA9}"
+      DTS:ObjectName="databaseshootings.database.windows.net.shootingsdatabase.shootings 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=databaseshootings.database.windows.net;User ID=shootings;Initial Catalog=shootingsdatabase;Application Name=SSIS-Package-{AFC0F25A-D9CD-434E-87FB-221784539DA9}databaseshootings.database.windows.net.shootingsdatabase.shootings 4;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARmQi2BIq0ECoA5PERxRAaQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACIGzNDr4FoZQqq8IAUFundPYIIaJxvLGeI2yy56flB4gAAAAAOgAAAAAIAACAAAAADS3sKtSAcBYDySej5whsZyowHkfoUBZmx8fh4xx7htiAAAACaYs+7aMKDhPN189NqvJ1A8fWo+KO8RYzt96AwC39b0UAAAAB5IwMkUOoc3bhWBnX/HEsAAUPS9HsK5VbTXaZLUdouFxsWalwP7iWm1PPypS/WhYwRmDKaymC43SogElR52fkZ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{537B4C72-AF0C-4FBB-BDEC-E632A0774EEB}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{91297B15-1CBA-4FB1-8352-F83A3562579E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{F89CD80A-9A8F-4C16-AA9F-EEB472650028}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{5E0E7EFD-D6F8-4270-868A-40CD3400E02E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{3547410C-9E1D-4960-B8FD-577B71BECF6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{FB63A5CE-516F-4F8F-B973-E6730CEB41F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{756CAB61-230C-455D-8ADE-AA5BB7E155B1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{0F76F3FC-AC6D-4772-B328-B8E991BD68B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{C9BF76A6-9941-48B0-98BB-8EBD89618A10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{4EDA839C-B4CE-4D09-8183-3FA552BCC497}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{31C79234-5D19-4DA9-9F2B-3A918D422649}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{8A1EFE06-CA32-4ECC-A959-0D4E61142606}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{6C5B4EBE-66BC-49B7-8484-641F75C7F4C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{0EBE040F-517E-4E70-9DCD-02C0862950B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{2E1D309D-9395-495F-B92E-40312CED0684}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{A2EC8EE5-8A5E-46BB-99D8-5515C656D1D0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{201712AD-647D-4F1C-B8B8-6950F1881E42}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{FB9E83D0-099D-4F93-9CA6-F0FA486B7E64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{C49C149E-8B90-450A-B223-5218106E65EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{013109AD-9860-458C-BF56-F113D1947C4F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{ED2356F0-E876-45B9-8D3D-65070221E3E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{26E31D14-0FDA-4F5D-84F1-6A6501B015F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{94DCB589-628E-4D5B-8302-0E2E58D2A7F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{C2FC8CE5-12CD-4356-A8CC-654FC388581A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{F7910F38-266E-4425-8EE2-484B1B9CE1D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{DB0EDD3A-21F9-416E-AE76-076951B94E20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{A818467B-5901-4229-B0FB-80616B3B4C0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{47B05ECB-E511-4B63-A223-015E919D84DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{51321B1C-55CA-4F06-81F6-A8D2AEC43FDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{89ADDB86-68A5-4CBE-A49B-771574236D2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{A7B6926D-E14B-470C-98CA-05C7391F05C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{7A5EE335-59E2-4B09-B0F2-ABFCC2AB58BA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Akis]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0A73CCCF-BC1F-4248-96A0-3F042929036A}"
+      DTS:ObjectName="Flat File Connection Manager Akis">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\akisp\Documents\ΔΑΜΙΑΝΟΣ\ΔΕΔΟΜΕΝΑ SHOOTINGS\shootings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{C380D587-6B21-44BA-8C41-B2942542FEBB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{587E1F69-99C2-4D47-AEFD-D0476CE40942}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{5FFFEC3E-F0EB-4412-AD0B-F24B9E63DB73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="16"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{C7ED856D-A598-46E6-9191-3F6F89D752B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{45DEC2C0-DB8E-4EE4-8553-A0FA8CC14B0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{49BA0BCF-1DB9-4772-A03C-D8FA8B9D7136}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{560F4F3A-DA84-4A20-9718-4EB82716100B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{81B0872F-08BE-4A2B-81DD-30914C70D7B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{756DADB7-AA6E-4CDC-AF53-0B5DA01EE0F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{7A4D6C97-B6AE-4425-AC04-0BED9DB22C04}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{C3B4DB37-DB72-4357-A934-0576FEC3A166}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{5A4393F2-A620-4959-A86C-12E11E1DD656}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{BE811A96-C021-4838-B2A4-D3EE152F70CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{D64CA044-0D3D-4627-A6B3-9C5C8B6F7409}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="21"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{F27A9A8C-6545-44E0-9623-DF6BFCA22255}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2E98B53B-3692-4FDB-A57D-E734B2F0F9DB}"
+      DTS:ObjectName="Flat File Connection Manager2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{D4FB379A-312D-4900-B706-DBA83A876438}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{3206FA24-F36A-4032-8ACE-0D82C09234D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{2E4D1D96-087E-481A-A9F9-B5C9E390844A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{10870247-EC12-433C-8753-3A53FA07AE7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{35B9F1CC-414E-4914-B3D6-9328D458EE52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{A608934D-307E-4339-9C23-E040F90D3A90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{96B5E189-83B8-4180-829B-4B5C1A62CE9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{441F29EC-4143-46EB-B6FC-B95D68134E8B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{9A0B169E-AFAC-4EDD-B447-5F8CF389CD5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{7373E84C-D01E-4FDB-A978-5CDA60D9EABC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{F83FAACC-CE90-4558-B4EA-66F24B7DD040}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{F5551EB4-A643-428B-B2EA-44F80410F8E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{16C5E18B-937F-425F-99C6-32B91CBE588D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{53A6F257-5AC6-4794-9BBC-6A4DCD7A3E1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{51FF7571-0BB3-45B3-955B-18C8C985F10C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import CSV"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A9A653D2-8EB5-403A-B74B-D12C2E94545A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import CSV"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import CSV\ADO NET Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."shootings_table"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import CSV\ADO NET Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[databaseshootings.database.windows.net.shootingsdatabase.shootings 4]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="name"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[date]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[manner_of_death]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="manner_of_death"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[manner_of_death]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[armed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="armed"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[armed]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[age]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="age"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[age]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="gender"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[gender]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[race]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="race"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[race]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[city]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[city]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[state]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="state"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[state]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[signs_of_mental_illness]"
+                      cachedDataType="bool"
+                      cachedName="signs_of_mental_illness"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[signs_of_mental_illness]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[signs_of_mental_illness]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[threat_level]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="threat_level"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[threat_level]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[flee]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="flee"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[flee]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[body_camera]"
+                      cachedDataType="bool"
+                      cachedName="body_camera"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[body_camera]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[body_camera]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[arms_category]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="arms_category"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[arms_category]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[id]"
+                      dataType="wstr"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="50"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[date]"
+                      dataType="wstr"
+                      length="50"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[manner_of_death]"
+                      dataType="wstr"
+                      length="50"
+                      name="manner_of_death" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[armed]"
+                      dataType="wstr"
+                      length="50"
+                      name="armed" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[age]"
+                      dataType="wstr"
+                      length="50"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="50"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[race]"
+                      dataType="wstr"
+                      length="50"
+                      name="race" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[city]"
+                      dataType="wstr"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[state]"
+                      dataType="wstr"
+                      length="50"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[signs_of_mental_illness]"
+                      dataType="bool"
+                      name="signs_of_mental_illness" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[threat_level]"
+                      dataType="wstr"
+                      length="50"
+                      name="threat_level" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[flee]"
+                      dataType="wstr"
+                      length="50"
+                      name="flee" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[body_camera]"
+                      dataType="bool"
+                      name="body_camera" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[arms_category]"
+                      dataType="wstr"
+                      length="50"
+                      name="arms_category" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import CSV\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import CSV\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager Akis]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager Akis]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[manner_of_death]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]"
+                      name="manner_of_death"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[armed]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]"
+                      name="armed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
+                      name="age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[race]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]"
+                      name="race"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      name="state"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[signs_of_mental_illness]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[signs_of_mental_illness]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[signs_of_mental_illness]"
+                      name="signs_of_mental_illness"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[threat_level]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]"
+                      name="threat_level"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[flee]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]"
+                      name="flee"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[body_camera]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[body_camera]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[body_camera]"
+                      name="body_camera"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[arms_category]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]"
+                      name="arms_category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      dataType="i8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="32"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      dataType="date"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[manner_of_death]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="manner_of_death" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[armed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="32"
+                      name="armed" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      dataType="r8"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[race]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="race" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[signs_of_mental_illness]"
+                      dataType="bool"
+                      name="signs_of_mental_illness" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[threat_level]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="threat_level" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[flee]"
+                      codePage="1252"
+                      dataType="str"
+                      length="11"
+                      name="flee" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[body_camera]"
+                      dataType="bool"
+                      name="body_camera" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[arms_category]"
+                      codePage="1252"
+                      dataType="str"
+                      length="21"
+                      name="arms_category" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import CSV.Paths[Flat File Source Output]"
+              endId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{cc575627-b4ad-49b8-82e1-1293859724cc}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1216A68E-B26C-4312-909C-B3E13BA37541}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [shootingsdatabase].[dbo].[shootings_table];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{3262589B-E40A-4E1D-B381-1294A223AE6C}"
+      DTS:From="Package\Truncate Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import CSV" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Import CSV"
+          TopLeft="474.666649215752,51.1000001239777" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Truncate Table"
+          TopLeft="211.666649215752,54.1000001239777" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="364.666649215752,73.6000001239777">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110,0"
+              Start="0,0"
+              End="102.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="102.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import CSV">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Import CSV\ADO NET Destination"
+          TopLeft="592.5,39.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Import CSV\Flat File Source"
+          TopLeft="188.5,80.5" />
+        <EdgeLayout
+          Id="Package\Import CSV.Paths[Flat File Source Output]"
+          TopLeft="358.5,101.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="234,-41"
+              Start="0,0"
+              End="226.5,-41">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="113,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="113,0"
+                    Point2="117,0"
+                    Point3="117,-4" />
+                  <mssgle:LineSegment
+                    End="117,-37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="117,-37"
+                    Point2="117,-41"
+                    Point3="121,-41" />
+                  <mssgle:LineSegment
+                    End="226.5,-41" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import CSV\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
