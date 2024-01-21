@@ -14,6 +14,29 @@ population = pd.read_csv('us_pop_by_state.csv')
 #defining functions we will be using in order to create a datacube
 #the functions below return dataframe objects
 
+def calculate_severity(row):
+    #in this function we will be calculating the severity of each listing, based on how badly we perceive of the suspect's behavior. then we will append it to the original dataframe
+    armed_values = {'gun': 90, 'toy weapon': 50, 'unknown': 20, 'knife': 70, 'shovel': 40,
+                    'box cutter': 60, 'machete': 80, 'unarmed': 10, 'screwdriver': 50,
+                    'hammer': 60, 'cordless drill': 50, 'blunt object': 60}
+
+    mental_illness_value = 20 if row['signs_of_mental_illness'] else 0
+
+    threat_level_values = {'attack': 90, 'undetermined': 40, 'other': 20}
+
+    armed_value = armed_values.get(row['armed'], 0)
+    threat_level_value = threat_level_values.get(row['threat_level'], 0)
+
+    # Calculate the severity based on the weighted sum of values
+    severity = (armed_value + mental_illness_value + threat_level_value) / 3
+    return severity
+
+
+
+
+
+
+
 def get_mental_illness():
     #used for getting a dataframe of the police shootings where the suspect has shown signs of mental illness
 
@@ -215,3 +238,6 @@ race_state_flee = groupby_race_state_flee()
 mental_threat_arms = groupby_mental_threat_arms()
 
 
+shootings['severity'] = shootings.apply(calculate_severity, axis=1)
+shootings.to_excel('severity.xlsx', index =False)
+shootings.to_csv('shootings2.csv', index = False)
