@@ -1,0 +1,377 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c486fb05-8fc6-4ff1-9d0c-6f2df3908bc0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Shootingsdatabase</ID>
+  <Name>Shootingsdatabase</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Shootingsdatabase</DataSourceID>
+  <Schema>
+    <xs:schema id="Shootingsdatabase" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Shootingsdatabase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="2e5e83d4-da18-408f-bb93-a5a2e45dcefe">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_shootings_fact" msprop:DbTableName="shootings_fact" msprop:FriendlyName="shootings_fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d7fcbbf7-ac58-4632-978c-74c75e1a104a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Name" msprop:FriendlyName="Name" msprop:DbColumnName="Name" msprop:design-time-name="b6b50b67-a494-4760-8e9d-156c373a7e22" type="xs:int" />
+                  <xs:element name="Age" msprop:FriendlyName="Age" msprop:DbColumnName="Age" msprop:design-time-name="19d2224a-8eef-4c86-93d4-17b02e7a0622" type="xs:int" />
+                  <xs:element name="Gender" msprop:FriendlyName="Gender" msprop:DbColumnName="Gender" msprop:design-time-name="cfc8c5ae-ce5b-4fc6-9760-dbb70c51f484" type="xs:int" />
+                  <xs:element name="City" msprop:FriendlyName="City" msprop:DbColumnName="City" msprop:design-time-name="e951380b-a051-45ca-a294-4cde61958851" type="xs:int" />
+                  <xs:element name="Armed" msprop:FriendlyName="Armed" msprop:DbColumnName="Armed" msprop:design-time-name="01b67947-bff8-4d6e-b599-9e6b25c22ab1" type="xs:int" />
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="5ad46c64-06d3-4134-a6ad-b858365eb9a4" type="xs:int" />
+                  <xs:element name="Race" msprop:FriendlyName="Race" msprop:DbColumnName="Race" msprop:design-time-name="83289e5f-4cf7-46d4-beb1-beeb1ba3678d" type="xs:int" />
+                  <xs:element name="Signs_of_Mental_Illness" msprop:FriendlyName="Signs_of_Mental_Illness" msprop:DbColumnName="Signs_of_Mental_Illness" msprop:design-time-name="5b923cb2-7ebc-47ff-b146-c9fd0c1c30f0" type="xs:int" />
+                  <xs:element name="Manner_of_Death" msprop:FriendlyName="Manner_of_Death" msprop:DbColumnName="Manner_of_Death" msprop:design-time-name="218e6f1c-1f88-4989-9f4f-f110efd5059b" type="xs:int" />
+                  <xs:element name="Body_Camera" msprop:FriendlyName="Body_Camera" msprop:DbColumnName="Body_Camera" msprop:design-time-name="7f33ae00-9cf0-4572-8bca-a593901002f5" type="xs:int" />
+                  <xs:element name="Threat_Level" msprop:FriendlyName="Threat_Level" msprop:DbColumnName="Threat_Level" msprop:design-time-name="7692d158-4c3b-43f2-a8fe-a8b28f835ecd" type="xs:int" />
+                  <xs:element name="Arms_Category" msprop:FriendlyName="Arms_Category" msprop:DbColumnName="Arms_Category" msprop:design-time-name="7220d742-23b1-47fb-89e4-c42ba92c9a78" type="xs:int" />
+                  <xs:element name="State" msprop:FriendlyName="State" msprop:DbColumnName="State" msprop:design-time-name="f25c7823-b870-48d9-bfa9-4d308e9d1a59" type="xs:int" />
+                  <xs:element name="Flee" msprop:FriendlyName="Flee" msprop:DbColumnName="Flee" msprop:design-time-name="044f5cce-1e73-49d7-b976-32dec473abe9" type="xs:int" />
+                  <xs:element name="Severity_Score" msprop:FriendlyName="Severity_Score" msprop:DbColumnName="Severity_Score" msprop:design-time-name="6d3848a9-81c0-4f0a-83e0-8806eae92939" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_threat_level_dim" msprop:DbTableName="threat_level_dim" msprop:FriendlyName="threat_level_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="099a998b-5769-4b81-ad8c-af0c39595592">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_threat_level" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_threat_level" msprop:DbColumnName="id_threat_level" msprop:design-time-name="036e465f-83c4-45eb-91d1-e20e4ee107bd" type="xs:int" />
+                  <xs:element name="label_threat_level" msprop:FriendlyName="label_threat_level" msprop:DbColumnName="label_threat_level" msprop:design-time-name="601b7c41-24bc-47c4-9b62-cf4ea3978a03">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_city_dim" msprop:DbTableName="city_dim" msprop:FriendlyName="city_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2c0fb2b7-8e52-4db1-995e-961f1e94dbc5">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_city" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_city" msprop:DbColumnName="id_city" msprop:design-time-name="1a237be7-aed8-4cfe-9479-4729931f6876" type="xs:int" />
+                  <xs:element name="label_city" msprop:FriendlyName="label_city" msprop:DbColumnName="label_city" msprop:design-time-name="7ba2c2e3-7f00-4a34-a10e-36a1d79d202f">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_arms_category_dim" msprop:DbTableName="arms_category_dim" msprop:FriendlyName="arms_category_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1d3029ba-1d66-416b-940e-4fc98b225230">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_arms_cat" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_arms_cat" msprop:DbColumnName="id_arms_cat" msprop:design-time-name="45fdc5ba-89f9-4741-8f18-9334ed23ad0a" type="xs:int" />
+                  <xs:element name="label_arms_cat" msprop:FriendlyName="label_arms_cat" msprop:DbColumnName="label_arms_cat" msprop:design-time-name="9efdf8fe-f4ca-4fbf-8b94-b71c74c68fab">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_name_dim" msprop:DbTableName="name_dim" msprop:FriendlyName="name_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="bcc2ed2f-c32e-4a7d-970f-d3848ba0ca12">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_name" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_name" msprop:DbColumnName="id_name" msprop:design-time-name="c88d6e38-57c0-4de1-a87e-74c2b571a474" type="xs:int" />
+                  <xs:element name="label_name" msprop:FriendlyName="label_name" msprop:DbColumnName="label_name" msprop:design-time-name="83d031ae-b3fc-42c6-8960-1ea064f2a662">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_signs_of_mental_illness_dim" msprop:DbTableName="signs_of_mental_illness_dim" msprop:FriendlyName="signs_of_mental_illness_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="436ff7cf-3805-4581-aea7-54cd666d719b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_signs_of_mental_illness" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_signs_of_mental_illness" msprop:DbColumnName="id_signs_of_mental_illness" msprop:design-time-name="a07ec9f1-8dda-4da0-85a9-37c0c9997323" type="xs:int" />
+                  <xs:element name="label_signs_of_mental_illness" msprop:FriendlyName="label_signs_of_mental_illness" msprop:DbColumnName="label_signs_of_mental_illness" msprop:design-time-name="027ec750-c47d-4482-967a-fc45ba927110" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_state_dim" msprop:DbTableName="state_dim" msprop:FriendlyName="state_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="049fd2cc-eb3e-4f3f-876b-60719d6e6488">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_state" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_state" msprop:DbColumnName="id_state" msprop:design-time-name="e030a4cc-8f0a-4585-ab68-5259ee238795" type="xs:int" />
+                  <xs:element name="label_state" msprop:FriendlyName="label_state" msprop:DbColumnName="label_state" msprop:design-time-name="512623af-5feb-4357-b90f-34fb62823783">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_age_dim" msprop:DbTableName="age_dim" msprop:FriendlyName="age_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9ed6227d-f15c-4752-824b-8fb18220d2ef">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_age" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_age" msprop:DbColumnName="id_age" msprop:design-time-name="d5499493-6802-44fb-9469-e4d66e7b6dc3" type="xs:int" />
+                  <xs:element name="label_age" msprop:FriendlyName="label_age" msprop:DbColumnName="label_age" msprop:design-time-name="4ee3e304-afec-4573-8bb3-ab686b7978d3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_armed_dim" msprop:DbTableName="armed_dim" msprop:FriendlyName="armed_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="69716757-6918-4489-9f33-e74155bae88e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_armed" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_armed" msprop:DbColumnName="id_armed" msprop:design-time-name="a7af5d24-b120-4502-a09b-ca3f4f8f569e" type="xs:int" />
+                  <xs:element name="label_armed" msprop:FriendlyName="label_armed" msprop:DbColumnName="label_armed" msprop:design-time-name="2a05af6d-5b5c-4ab1-ad38-68a92fa136d0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_gender_dim" msprop:DbTableName="gender_dim" msprop:FriendlyName="gender_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="527a8df8-887c-4554-b5d1-c84e7880e364">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_gender" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_gender" msprop:DbColumnName="id_gender" msprop:design-time-name="342f0322-d325-4e57-87e8-ad73972735a0" type="xs:int" />
+                  <xs:element name="label_gender" msprop:FriendlyName="label_gender" msprop:DbColumnName="label_gender" msprop:design-time-name="6e213f59-f027-4dba-b79c-9f8575218932">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_flee_dim" msprop:DbTableName="flee_dim" msprop:FriendlyName="flee_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="8b90206a-ce3d-4e16-a95f-d22dea2f7089">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_flee" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_flee" msprop:DbColumnName="id_flee" msprop:design-time-name="9e1dc44c-72a1-4bef-be27-1ebaef2f4cac" type="xs:int" />
+                  <xs:element name="label_flee" msprop:FriendlyName="label_flee" msprop:DbColumnName="label_flee" msprop:design-time-name="7a259a71-ee6f-4007-b06f-8784a7048b96">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_body_camera_dim" msprop:DbTableName="body_camera_dim" msprop:FriendlyName="body_camera_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="012e9b65-ca60-433b-bc3c-538e05fa250b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_body_camera" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_body_camera" msprop:DbColumnName="id_body_camera" msprop:design-time-name="a1600958-4b20-45a1-824e-590ac60c4901" type="xs:int" />
+                  <xs:element name="label_body_camera" msprop:FriendlyName="label_body_camera" msprop:DbColumnName="label_body_camera" msprop:design-time-name="af45db7a-0f27-4978-a118-c7a5e0a255e6">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_manner_of_death_dim" msprop:DbTableName="manner_of_death_dim" msprop:FriendlyName="manner_of_death_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3dfab8ee-1aae-4119-8d36-df7ee69efc59">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_manner" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_manner" msprop:DbColumnName="id_manner" msprop:design-time-name="5e8c5705-1df7-4eb1-8d09-bc288dd62d53" type="xs:int" />
+                  <xs:element name="label_manner" msprop:FriendlyName="label_manner" msprop:DbColumnName="label_manner" msprop:design-time-name="a50d8ca3-a030-4b09-8577-01a73479a217">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_date_dim" msprop:DbTableName="date_dim" msprop:FriendlyName="date_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="09fc5eee-21d1-4d39-b5a3-85e5a9121b15">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_date" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_date" msprop:DbColumnName="id_date" msprop:design-time-name="0394ead6-9e0e-43fb-9995-de7dd22ca853" type="xs:int" />
+                  <xs:element name="label_date" msprop:FriendlyName="label_date" msprop:DbColumnName="label_date" msprop:design-time-name="d5120269-f6c2-430f-b200-da815ac414d4">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_race_dim" msprop:DbTableName="race_dim" msprop:FriendlyName="race_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="97c8d75e-103b-4cb1-bb41-7a678e170994">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_race" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_race" msprop:DbColumnName="id_race" msprop:design-time-name="844aa4db-f619-4b22-92b6-0dadf5b8485a" type="xs:int" />
+                  <xs:element name="label_race" msprop:FriendlyName="label_race" msprop:DbColumnName="label_race" msprop:design-time-name="1dd3baac-2b5d-4308-a30c-ae8079dc305f">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="256" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_threat_level_dim" />
+          <xs:field xpath="id_threat_level" />
+        </xs:unique>
+        <xs:unique name="dbo_city_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_city_dim" />
+          <xs:field xpath="id_city" />
+        </xs:unique>
+        <xs:unique name="dbo_arms_category_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_arms_category_dim" />
+          <xs:field xpath="id_arms_cat" />
+        </xs:unique>
+        <xs:unique name="dbo_name_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_name_dim" />
+          <xs:field xpath="id_name" />
+        </xs:unique>
+        <xs:unique name="dbo_signs_of_mental_illness_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_signs_of_mental_illness_dim" />
+          <xs:field xpath="id_signs_of_mental_illness" />
+        </xs:unique>
+        <xs:unique name="dbo_state_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_state_dim" />
+          <xs:field xpath="id_state" />
+        </xs:unique>
+        <xs:unique name="dbo_age_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_age_dim" />
+          <xs:field xpath="id_age" />
+        </xs:unique>
+        <xs:unique name="dbo_armed_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_armed_dim" />
+          <xs:field xpath="id_armed" />
+        </xs:unique>
+        <xs:unique name="dbo_gender_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_gender_dim" />
+          <xs:field xpath="id_gender" />
+        </xs:unique>
+        <xs:unique name="dbo_flee_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_flee_dim" />
+          <xs:field xpath="id_flee" />
+        </xs:unique>
+        <xs:unique name="dbo_body_camera_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_body_camera_dim" />
+          <xs:field xpath="id_body_camera" />
+        </xs:unique>
+        <xs:unique name="dbo_manner_of_death_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_manner_of_death_dim" />
+          <xs:field xpath="id_manner" />
+        </xs:unique>
+        <xs:unique name="dbo_date_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_date_dim" />
+          <xs:field xpath="id_date" />
+        </xs:unique>
+        <xs:unique name="dbo_race_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_race_dim" />
+          <xs:field xpath="id_race" />
+        </xs:unique>
+        <xs:keyref name="FK_shootings_fact_manner_of_death_dim1" refer="dbo_manner_of_death_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Manner_of_Death" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_city_dim1" refer="dbo_city_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="City" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_body_camera_dim" refer="dbo_body_camera_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Body_Camera" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_race_dim1" refer="dbo_race_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Race" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_armed_dim1" refer="dbo_armed_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Armed" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_state_dim" refer="dbo_state_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="State" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_gender_dim1" refer="dbo_gender_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Gender" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_date_dim1" refer="dbo_date_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Date" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_signs_of_mental_illness_dim1" refer="dbo_signs_of_mental_illness_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Signs_of_Mental_Illness" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_flee_dim1" refer="dbo_flee_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Flee" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_age_dim1" refer="dbo_age_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Age" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_arms_category_dim" refer="dbo_arms_category_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Arms_Category" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_name_dim1" refer="dbo_name_dim_Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Name" />
+        </xs:keyref>
+        <xs:keyref name="FK_shootings_fact_threat_level_dim" refer="Constraint1">
+          <xs:selector xpath=".//dbo_shootings_fact" />
+          <xs:field xpath="Threat_Level" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Shootingsdatabase xmlns="" />
+  </Schema>
+</DataSourceView>
