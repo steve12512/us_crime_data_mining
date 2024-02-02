@@ -3,22 +3,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <UserIDs>
-          <ConfigurationSetting>
-            <Id>Shootingsdatabase</Id>
-            <Name>Shootingsdatabase</Name>
-            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIK5+GoYxh06J9cjSQNgkDAAAAAAkAAAAUwBoAG8AbwB0AGkAbgBnAHMAZABhAHQAYQBiAGEAcwBlAAAAEGYAAAABAAAgAAAAZPTMDf0C4eptOC/8W90VlUetkfsox2CPsZI5i2OK3lAAAAAADoAAAAACAAAgAAAAUbLvHkskU9zZr/HHc7+ooSXIahbD3PphT2QeNoXLWSsgAAAAf/6ZP5gPlB6CTOO8aDDvsRc+LzGHQk3wdnqxlpzayiRAAAAAhFtxJw20ektQlMrRvEPd5AIztUm8n68UnQgqKdoloRbCBL3XLC9j28OfPSyTr5m6quePAb09Th8VKsEOUmpuMw==</Value>
-          </ConfigurationSetting>
-        </UserIDs>
-        <UserPasswords>
-          <ConfigurationSetting>
-            <Id>Shootingsdatabase</Id>
-            <Name>Shootingsdatabase</Name>
-            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIK5+GoYxh06J9cjSQNgkDAAAAAAkAAAAUwBoAG8AbwB0AGkAbgBnAHMAZABhAHQAYQBiAGEAcwBlAAAAEGYAAAABAAAgAAAAlNtPUGVhsX7JNcAE/hsI0GK9gfr4KM/gS21cfhPhB14AAAAADoAAAAACAAAgAAAAzAH7gerLwiiM+vvivzV57aqEBmE1457Ks+NSbfHNy70gAAAAmWpal/1yDoAjbVPMYQ8PaDE1lnRADnFmeQdT42rFTZRAAAAAP1vgs5RRRsx0/+7kFJguoHhg8mY3vYDgBlu3xc0PP90Me4jEZdGnni9fHm4aQQTwzy2KZN0caKLoilnAeYie1A==</Value>
-          </ConfigurationSetting>
-        </UserPasswords>
-        <TargetServer>(local)</TargetServer>
-        <TargetDatabase>shootings</TargetDatabase>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>MultidimensionalProject_localdb</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>
