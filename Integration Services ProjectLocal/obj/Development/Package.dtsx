@@ -1,0 +1,3023 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/5/2024 7:05:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-CSH9QGAS"
+  DTS:CreatorName="LAPTOP-CSH9QGAS\steve"
+  DTS:DTSID="{BEF13907-4E50-4654-A4C1-C188DEB60130}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="94"
+  DTS:VersionGUID="{5BA20D13-2C1C-4DCA-8363-A036DAA5BC7D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9E138CD1-0CE9-4C79-8894-C4F0DCDACF4D}"
+      DTS:ObjectName="Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\akisp\Documents\ΔΑΜΙΑΝΟΣ\Repo\us_crime_data_mining\shootings2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{AFAF2249-FFF7-467F-BA0C-CDBDB156E479}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{0C307597-5489-4663-855C-9D50E2E81448}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{7AE5BE3C-3645-424D-B298-675EC433A8C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="16"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{2A1D44CF-9D0D-4E64-9B01-FA640703322D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{B7D0B207-BE4B-4A31-82ED-0446BFDA5445}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{6AC3D7AF-C3D0-4E34-AD4D-1B71143BC1D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{07C843E9-DB73-46BF-AA34-0BD23DE15F3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{6CD42E05-EA44-4631-860D-F913EDC7FF5D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{CA2F729A-E319-4462-8CC8-B490BBEEE4FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{EF54ABE2-72D9-451C-B99D-A1EDDA9AE617}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{48749366-CA02-4A29-B2E9-34E04A5BC3E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{2E8CC0B6-3A2C-46DE-A73D-F5D44A75A85E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{F19F49F1-B060-4E59-9888-FC74E8F86269}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{486CD52F-6847-499D-AA34-2B6B05A9C0A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="21"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{8B17D40D-773F-4BF8-9662-3A04A3F46D7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="severity"
+              DTS:DTSID="{213C1C03-A985-4CBF-A8F8-5A8EEF99CE31}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{38C31498-0ABE-418A-80F5-DA4F43B0C21A}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{F814AB48-C649-43C4-A96D-2C7B229305B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="34"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{48FC76AE-AAFC-4995-92D4-E36AF30F02CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{7888D2DD-AB1A-4EFD-A94D-2E4B51D2EE91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="16"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{6180CED8-6FD6-4974-AE99-017A12A81372}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{C8AFBFA5-A322-4164-91A8-B52765D6260E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{5557DEB5-5CE4-4439-B74C-5DBD0AF14B13}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{A21DE5B7-4265-402D-A3B6-E116E1C3EC96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{6AF2A121-DF43-408A-8C1B-77172687D9B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{CFAEAE44-793F-4EC3-9472-D36D72E329D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="16"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{392028E6-23E0-4DC7-8893-1FC27C3378BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{D25FFE44-A7A2-4155-BBD6-D0819BC10318}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{D5EA0689-0E77-4B49-B7CA-522C12100550}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{45642123-0A73-4033-989F-A6D006B10CA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{7C4A7C38-2030-4871-AFA5-816A08D83846}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="21"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{718B6ADD-DAEB-4761-BB7B-74F0099AB624}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1 Akis]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7E43BE2E-DEA2-48AC-B766-9E74A0A05E1D}"
+      DTS:ObjectName="Flat File Connection Manager 1 Akis">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\User\Documents\ΔΑΜΙΑΝΟΣ\us_crime_data_mining\shootings2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{BBB7BEE4-88F5-4723-9541-436396FD804F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{1F70C808-545C-4FF3-8AC1-495FF4531A74}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{02477969-15CE-4434-83D1-CCA398017CB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="16"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{3BDD5757-66BE-4174-8FC9-856509114890}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{11548C73-B5F5-484F-BB9B-93FF58BA0F8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{14B0D22C-9576-42BC-8608-ADB966FEE195}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{C610E35E-1076-4E56-894A-C02E45DAC002}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{95358234-2BC0-4D0B-8077-0B66535CBF81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{E2EE1298-6572-4D16-ACE7-CE654F7F8B11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{F03522CC-7579-4AEE-8C2C-EEAB2E52E299}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{C1792324-C1D6-423D-85EF-8449172EBACF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{1FE424CD-7EE4-4FC0-A14E-0305C0CA0846}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{E838C418-A93D-4534-BD41-25E8C0DC48F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{36F49E41-1753-4835-9991-A33843ECCCD8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="21"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{2521915C-6A79-48E7-91A0-105C4AE09724}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="severity"
+              DTS:DTSID="{12C413E8-BEF4-4B73-910C-5137D5F43C12}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F52A3B9D-EE9D-4F48-9C5C-3D63DBBDDADC}"
+      DTS:ObjectName="Flat File Connection Manager1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\steve\Downloads\shootings2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{A23BD794-362A-4F93-921F-D35B08C50408}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{7DB876D8-B560-4F4B-B4EA-2A515DE56153}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{73F938C0-CDC4-496D-B881-B7CF3DBBE35E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="16"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="manner_of_death"
+              DTS:DTSID="{C7D5282E-EB06-47A2-81D9-2E5908C3B003}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="armed"
+              DTS:DTSID="{12F3467D-E055-4C6A-BBF9-31A62B102F12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{36823721-4736-4DF8-AC32-FAE19045A4A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{31F013B1-FF5E-44E5-9050-A7D5CD69A817}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="race"
+              DTS:DTSID="{1A158737-AA32-42BE-950D-AB028F66C7D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{BEF1CB3A-A829-4D07-8F99-E77309BA8C68}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{E895178B-43BC-489D-9B40-616C1C3FCDBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="signs_of_mental_illness"
+              DTS:DTSID="{3222FE48-56A7-43DD-BF59-247050191370}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="threat_level"
+              DTS:DTSID="{83290F38-A611-41C6-AE58-1F6CD9EF14A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="flee"
+              DTS:DTSID="{533AAE4B-BC17-462F-B143-905EA6F84A6E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="body_camera"
+              DTS:DTSID="{47A5FD03-4902-4F85-A24B-E8F9CAEEC263}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="21"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arms_category"
+              DTS:DTSID="{8810AA16-062E-4358-9152-F72154F7BE3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="severity"
+              DTS:DTSID="{8DAB153C-571D-4158-B229-6ECAC3DFC211}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.shootings]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{ADDE3974-5511-46C6-B28B-89024833E642}"
+      DTS:ObjectName="LocalHost.shootings">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=shootings;Integrated Security=True;Application Name=SSIS-Package-{ADDE3974-5511-46C6-B28B-89024833E642}LocalHost.shootings;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import CSV"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A9A653D2-8EB5-403A-B74B-D12C2E94545A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import CSV"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import CSV\ADO NET Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."shootings_table"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import CSV\ADO NET Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.shootings]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.shootings]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="name"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[date]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[manner_of_death]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="manner_of_death"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[manner_of_death]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[armed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="armed"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[armed]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[age]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="age"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[age]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="gender"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[gender]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[race]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="race"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[race]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[city]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[city]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[state]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="state"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[state]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[signs_of_mental_illness]"
+                      cachedDataType="bool"
+                      cachedName="signs_of_mental_illness"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[signs_of_mental_illness]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[signs_of_mental_illness]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[threat_level]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="threat_level"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[threat_level]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[flee]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="flee"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[flee]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[body_camera]"
+                      cachedDataType="bool"
+                      cachedName="body_camera"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[body_camera]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[body_camera]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[arms_category]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="arms_category"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[arms_category]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]" />
+                    <inputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[severity]"
+                      cachedDataType="r8"
+                      cachedName="severity"
+                      externalMetadataColumnId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[severity]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[severity]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="50"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[date]"
+                      dataType="wstr"
+                      length="50"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[manner_of_death]"
+                      dataType="wstr"
+                      length="50"
+                      name="manner_of_death" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[armed]"
+                      dataType="wstr"
+                      length="50"
+                      name="armed" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[age]"
+                      dataType="wstr"
+                      length="50"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="50"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[race]"
+                      dataType="wstr"
+                      length="50"
+                      name="race" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[city]"
+                      dataType="wstr"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[state]"
+                      dataType="wstr"
+                      length="50"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[signs_of_mental_illness]"
+                      dataType="bool"
+                      name="signs_of_mental_illness" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[threat_level]"
+                      dataType="wstr"
+                      length="50"
+                      name="threat_level" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[flee]"
+                      dataType="wstr"
+                      length="50"
+                      name="flee" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[body_camera]"
+                      dataType="bool"
+                      name="body_camera" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[arms_category]"
+                      dataType="wstr"
+                      length="50"
+                      name="arms_category" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[severity]"
+                      dataType="r8"
+                      name="severity" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import CSV\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import CSV\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1 Akis]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1 Akis]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[manner_of_death]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[manner_of_death]"
+                      name="manner_of_death"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[armed]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[armed]"
+                      name="armed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
+                      name="age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[race]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[race]"
+                      name="race"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      name="state"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[signs_of_mental_illness]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[signs_of_mental_illness]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[signs_of_mental_illness]"
+                      name="signs_of_mental_illness"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[threat_level]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[threat_level]"
+                      name="threat_level"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[flee]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[flee]"
+                      name="flee"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[body_camera]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[body_camera]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[body_camera]"
+                      name="body_camera"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[arms_category]"
+                      length="50"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[arms_category]"
+                      name="arms_category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[severity]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[severity]"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[severity]"
+                      name="severity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      dataType="i8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="32"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      dataType="date"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[manner_of_death]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="manner_of_death" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[armed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="32"
+                      name="armed" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      dataType="r8"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[race]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="race" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[signs_of_mental_illness]"
+                      dataType="bool"
+                      name="signs_of_mental_illness" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[threat_level]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="threat_level" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[flee]"
+                      codePage="1252"
+                      dataType="str"
+                      length="11"
+                      name="flee" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[body_camera]"
+                      dataType="bool"
+                      name="body_camera" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[arms_category]"
+                      codePage="1252"
+                      dataType="str"
+                      length="21"
+                      name="arms_category" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[severity]"
+                      dataType="r8"
+                      name="severity" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import CSV.Paths[Flat File Source Output]"
+              endId="Package\Import CSV\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{cc575627-b4ad-49b8-82e1-1293859724cc}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [shootings].[dbo].[shootings_table];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Age Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E629E831-F235-4EEC-A044-3AB491522C40}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Age Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO age_dim (label_age) SELECT DISTINCT [age] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Armed Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{EF4222A6-0474-4A42-8C57-85C5B2F80CE9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Armed Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO armed_dim (label_armed) SELECT DISTINCT [armed] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Arms Category Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{EAAA9902-39AB-4DD8-AB8E-87B770AC2A46}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Arms Category Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="12">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO arms_cat_dim (label_arms_cat) SELECT DISTINCT [arms_category] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Body Camera Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B4A90972-4673-4330-A33C-12B0625FBE3D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Body Camera Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO body_camera_dim (label_body_camera) SELECT DISTINCT [body_camera] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update City Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{CA1E854B-66DA-4412-AF0D-1519D83301F5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update City Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO city_dim (label_city) SELECT DISTINCT [city] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Date Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C33AE96C-06C5-4310-A11C-7C990DF94CFF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Date Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="10">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO date_dim (label_date) SELECT DISTINCT [date] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Fact Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{6D2BE59E-1EBA-4204-A883-A76865CB8D78}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Fact Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO shootings_fact&#xA;SELECT [id_name] AS [Name],&#xA;[id_age] AS [Age],&#xA;[id_gender] AS [Gender],&#xA;[id_armed] AS [Armed],&#xA;[id_threat_level] AS [Threat_Level],&#xA;[id_body_camera] AS [Body_Camera],&#xA;[id_arms_cat] AS [Arms_Category],&#xA;[id_city] AS [City],&#xA;[id_state] AS [State],&#xA;[id_date] AS [Date],&#xA;[id_race] AS [Race],&#xA;[id_manner] AS [Manner_of_Death],&#xA;[id_flee] AS [Flee],&#xA;[id_signs] AS [Signs_of_Mental_Illness],&#xA;[severity] as Severity_Score&#xA;FROM shootings_table&#xA;INNER JOIN [name_dim] ON [shootings_table].[Name] = [name_dim].[label_name]&#xA;INNER JOIN [age_dim] ON [shootings_table].[Age] = [age_dim].[label_age]&#xA;INNER JOIN [gender_dim] ON [shootings_table].[Gender] = [gender_dim].[label_gender]&#xA;INNER JOIN [date_dim] ON [shootings_table].[Date] = [date_dim].[label_date]&#xA;INNER JOIN [city_dim] ON [shootings_table].[City] = [city_dim].[label_city]&#xA;INNER JOIN [state_dim] ON [shootings_table].[State] = [state_dim].[label_state]&#xA;INNER JOIN [armed_dim] ON [shootings_table].[Armed] = [armed_dim].[label_armed]&#xA;INNER JOIN [arms_cat_dim] ON [shootings_table].[Arms_Category] = [arms_cat_dim].[label_arms_cat]&#xA;INNER JOIN [flee_dim] ON [shootings_table].[Flee] = [flee_dim].[label_flee]&#xA;INNER JOIN [manner_of_death_dim] ON [shootings_table].[Manner_of_Death] = [manner_of_death_dim].[label_manner]&#xA;INNER JOIN [race_dim] ON [shootings_table].[Race] = [race_dim].[label_race]&#xA;INNER JOIN [signs_of_mental_illness_dim] ON [shootings_table].[Signs_of_Mental_Illness] = [signs_of_mental_illness_dim].[label_signs]&#xA;INNER JOIN [threat_level_dim] ON [shootings_table].[Threat_Level] = [threat_level_dim].[label_threat_level]&#xA;INNER JOIN [body_camera_dim] ON [shootings_table].[Body_Camera] = [body_camera_dim].[label_body_camera];&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Flee Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2C1AC762-C6C4-418F-8EFD-4B054353E39B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Flee Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO flee_dim (label_flee) SELECT DISTINCT [flee] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Gender Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1D994579-A831-4C6F-97E4-546878F20377}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Gender Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="7">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO gender_dim (label_gender) SELECT DISTINCT [gender] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Manner of Death Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{30673462-BAEA-460B-A2C8-0DD935CF5E30}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Manner of Death Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO manner_of_death_dim (label_manner) SELECT DISTINCT [manner_of_death] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Mental Ilness Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D3063A92-20BF-4D02-9D57-2C75DDA2CFCB}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Mental Ilness Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="9">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO signs_of_mental_illness_dim (label_signs) SELECT DISTINCT [signs_of_mental_illness] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Name Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{107D198D-34A0-4C59-9E81-A5B745BB56AD}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Name Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="13">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO name_dim (label_name) SELECT DISTINCT [name] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Race Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C893F0F9-4452-441E-969F-0E4FD52DF768}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Race Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO race_dim (label_race) SELECT DISTINCT [race] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update State Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{40AEC16E-A222-465A-B5E0-5AA9B1B614D5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update State Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="11">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO state_dim (label_state) SELECT DISTINCT [state] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Threat Level Dim"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{88312D67-4364-475D-A0C5-A95D96B9DCC3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Threat Level Dim"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="8">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ADDE3974-5511-46C6-B28B-89024833E642}"
+          SQLTask:SqlStatementSource="INSERT INTO threat_level_dim (label_threat_level) SELECT DISTINCT [threat_level] FROM shootings_table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{3262589B-E40A-4E1D-B381-1294A223AE6C}"
+      DTS:From="Package\Truncate Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import CSV" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{6DB5F543-A317-4860-9BE6-797C18C94A9D}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Update Race Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
+      DTS:CreationName=""
+      DTS:DTSID="{FED34300-DF24-44E4-81EF-B1407158488F}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 10"
+      DTS:To="Package\Update Gender Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
+      DTS:CreationName=""
+      DTS:DTSID="{46307DE6-B455-4A55-8F6B-C7314F2DC633}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 11"
+      DTS:To="Package\Update City Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
+      DTS:CreationName=""
+      DTS:DTSID="{220EBB78-6524-4BD4-8240-EE28330AAB95}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 12"
+      DTS:To="Package\Update Armed Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
+      DTS:CreationName=""
+      DTS:DTSID="{868572C9-A79A-4331-83E8-978076C8503A}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 13"
+      DTS:To="Package\Update Arms Category Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
+      DTS:CreationName=""
+      DTS:DTSID="{ED464A82-BCB1-4830-8230-9AFEB4F81BC9}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 14"
+      DTS:To="Package\Update Manner of Death Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 15]"
+      DTS:CreationName=""
+      DTS:DTSID="{7EB7DEA9-6A1B-47D5-8A05-5BFE98DE4077}"
+      DTS:From="Package\Update Age Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 15"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 16]"
+      DTS:CreationName=""
+      DTS:DTSID="{166A72F8-7DCE-4516-B27F-0A92F973722F}"
+      DTS:From="Package\Update Date Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 16"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 17]"
+      DTS:CreationName=""
+      DTS:DTSID="{4D2A06CA-324E-4129-B905-7D0931B15977}"
+      DTS:From="Package\Update Gender Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 17"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 18]"
+      DTS:CreationName=""
+      DTS:DTSID="{C6922E8C-62AA-48B8-A906-C4C446921992}"
+      DTS:From="Package\Update Race Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 18"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 19]"
+      DTS:CreationName=""
+      DTS:DTSID="{434F4744-2AF8-4A69-A1F1-CACBFF84326B}"
+      DTS:From="Package\Update State Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 19"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{6D623A02-B22F-4D1A-992F-7F57C107AF43}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update State Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 20]"
+      DTS:CreationName=""
+      DTS:DTSID="{11783403-EEF6-406B-9E1F-7B96FFE88963}"
+      DTS:From="Package\Update Mental Ilness Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 20"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 21]"
+      DTS:CreationName=""
+      DTS:DTSID="{E21CAFDF-C7B3-4BB5-9CFE-CB4DD4C64625}"
+      DTS:From="Package\Update Flee Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 21"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 22]"
+      DTS:CreationName=""
+      DTS:DTSID="{C5E04B35-D437-4353-BD99-B8ECE1C0CD93}"
+      DTS:From="Package\Update Threat Level Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 22"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 23]"
+      DTS:CreationName=""
+      DTS:DTSID="{E60445E0-E97F-44CB-A218-8415732299AE}"
+      DTS:From="Package\Update Body Camera Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 23"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 24]"
+      DTS:CreationName=""
+      DTS:DTSID="{B27184D4-0BA5-40EE-8F9B-6C6CF1BF94F6}"
+      DTS:From="Package\Update City Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 24"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 25]"
+      DTS:CreationName=""
+      DTS:DTSID="{8B3B01F3-F4CE-400C-BEA6-23FAF7958C27}"
+      DTS:From="Package\Update Armed Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 25"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 26]"
+      DTS:CreationName=""
+      DTS:DTSID="{4AEA27DB-8BD2-4A51-B5E3-327D9F6F7F4A}"
+      DTS:From="Package\Update Arms Category Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 26"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 27]"
+      DTS:CreationName=""
+      DTS:DTSID="{FB64CAC6-F538-4932-8687-23D63AD60AA9}"
+      DTS:From="Package\Update Manner of Death Dim"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 27"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{2BB556EC-1B43-4969-B449-20C10C6435F1}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Update Mental Ilness Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{18CDE742-AC6E-4F54-85CB-5B5C03B5D342}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Update Flee Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{1C5198AF-DB2A-432B-95EF-CA21F70EE570}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Update Threat Level Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{5C0B8601-0740-452B-A233-D07F9DB435F2}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Update Body Camera Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{CB3841E6-EE80-4675-BC7F-88D7156A76FB}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Update Name Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{4F950A2E-E242-42B4-B453-FB1B2A28F932}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Update Age Dim" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{00017C22-32C8-4624-9A3F-FC0698A45F03}"
+      DTS:From="Package\Import CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Update Date Dim" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Import CSV"
+          TopLeft="370.666649215752,436.100000123978" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Truncate Table"
+          TopLeft="186.666649215752,434.100000123978" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Update Age Dim"
+          TopLeft="569.5,130.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Update Armed Dim"
+          TopLeft="576.5,678.5" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Update Arms Category Dim"
+          TopLeft="574.5,729.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Update Body Camera Dim"
+          TopLeft="573.5,572.5" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Update City Dim"
+          TopLeft="571.5,626.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Update Date Dim"
+          TopLeft="571.5,181.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Update Fact Table"
+          TopLeft="848.5,455.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Update Flee Dim"
+          TopLeft="572.5,456.5" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Update Gender Dim"
+          TopLeft="569.5,233.5" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\Update Manner of Death Dim"
+          TopLeft="578.5,778.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Update Mental Ilness Dim"
+          TopLeft="565.5,402.5" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Update Name Dim"
+          TopLeft="572.5,85.5" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Update Race Dim"
+          TopLeft="562.5,288.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Update State Dim"
+          TopLeft="562.5,343.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Update Threat Level Dim"
+          TopLeft="570.5,514.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="335.466649215752,455.900000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="35.2,0"
+              Start="0,0"
+              End="27.7,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="27.7,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="417.333315882419,436.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="228.166684117581,-105.600000123978"
+              Start="0,0"
+              End="228.166684117581,-98.100000123978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-38.9767442365027" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-38.9767442365027"
+                    Point2="0,-42.9767442365027"
+                    Point3="4,-42.9767442365027" />
+                  <mssgle:LineSegment
+                    End="224.166684117581,-42.9767442365027" />
+                  <mssgle:CubicBezierSegment
+                    Point1="224.166684117581,-42.9767442365027"
+                    Point2="228.166684117581,-42.9767442365027"
+                    Point3="228.166684117581,-46.9767442365027" />
+                  <mssgle:LineSegment
+                    End="228.166684117581,-98.100000123978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="484.380934930038,436.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="173.619065069962,-160.600000123978"
+              Start="0,0"
+              End="173.619065069962,-153.100000123978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-35.6417721825009" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-35.6417721825009"
+                    Point2="0,-39.6417721825009"
+                    Point3="4,-39.6417721825009" />
+                  <mssgle:LineSegment
+                    End="169.619065069962,-39.6417721825009" />
+                  <mssgle:CubicBezierSegment
+                    Point1="169.619065069962,-39.6417721825009"
+                    Point2="173.619065069962,-39.6417721825009"
+                    Point3="173.619065069962,-43.6417721825009" />
+                  <mssgle:LineSegment
+                    End="173.619065069962,-153.100000123978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="406.666649215752,478.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="244.333350784248,148.399999876022"
+              Start="0,0"
+              End="244.333350784248,140.899999876022">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.3692307263153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.3692307263153"
+                    Point2="0,51.3692307263153"
+                    Point3="4,51.3692307263153" />
+                  <mssgle:LineSegment
+                    End="240.333350784248,51.3692307263153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="240.333350784248,51.3692307263153"
+                    Point2="244.333350784248,51.3692307263153"
+                    Point3="244.333350784248,55.3692307263153" />
+                  <mssgle:LineSegment
+                    End="244.333350784248,140.899999876022" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 12]"
+          TopLeft="477.066649215752,478.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="185.433350784248,200.399999876022"
+              Start="0,0"
+              End="185.433350784248,192.899999876022">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.7770491427279" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.7770491427279"
+                    Point2="0,60.7770491427279"
+                    Point3="4,60.7770491427279" />
+                  <mssgle:LineSegment
+                    End="181.433350784248,60.7770491427279" />
+                  <mssgle:CubicBezierSegment
+                    Point1="181.433350784248,60.7770491427279"
+                    Point2="185.433350784248,60.7770491427279"
+                    Point3="185.433350784248,64.7770491427279" />
+                  <mssgle:LineSegment
+                    End="185.433350784248,192.899999876022" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13]"
+          TopLeft="466.095220644323,478.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="214.904779355677,251.399999876022"
+              Start="0,0"
+              End="214.904779355677,243.899999876022">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,89.9442104799871" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,89.9442104799871"
+                    Point2="0,93.9442104799871"
+                    Point3="4,93.9442104799871" />
+                  <mssgle:LineSegment
+                    End="210.904779355677,93.9442104799871" />
+                  <mssgle:CubicBezierSegment
+                    Point1="210.904779355677,93.9442104799871"
+                    Point2="214.904779355677,93.9442104799871"
+                    Point3="214.904779355677,97.9442104799871" />
+                  <mssgle:LineSegment
+                    End="214.904779355677,243.899999876022" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 14]"
+          TopLeft="484.380934930038,478.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="205.119065069962,300.399999876022"
+              Start="0,0"
+              End="205.119065069962,292.899999876022">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.1493670580054" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,70.1493670580054"
+                    Point2="0,74.1493670580054"
+                    Point3="4,74.1493670580054" />
+                  <mssgle:LineSegment
+                    End="201.119065069962,74.1493670580054" />
+                  <mssgle:CubicBezierSegment
+                    Point1="201.119065069962,74.1493670580054"
+                    Point2="205.119065069962,74.1493670580054"
+                    Point3="205.119065069962,78.1493670580054" />
+                  <mssgle:LineSegment
+                    End="205.119065069962,292.899999876022" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 15]"
+          TopLeft="674.166666666667,172.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="259.333333333333,283"
+              Start="0,0"
+              End="259.333333333333,275.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,110.891656288917" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,110.891656288917"
+                    Point2="0,114.891656288917"
+                    Point3="4,114.891656288917" />
+                  <mssgle:LineSegment
+                    End="255.333333333333,114.891656288917" />
+                  <mssgle:CubicBezierSegment
+                    Point1="255.333333333333,114.891656288917"
+                    Point2="259.333333333333,114.891656288917"
+                    Point3="259.333333333333,118.891656288917" />
+                  <mssgle:LineSegment
+                    End="259.333333333333,275.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 16]"
+          TopLeft="678.833333333333,223.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="281.666666666667,232"
+              Start="0,0"
+              End="281.666666666667,224.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,112.057231463208" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,112.057231463208"
+                    Point2="0,116.057231463208"
+                    Point3="4,116.057231463208" />
+                  <mssgle:LineSegment
+                    End="277.666666666667,116.057231463208" />
+                  <mssgle:CubicBezierSegment
+                    Point1="277.666666666667,116.057231463208"
+                    Point2="281.666666666667,116.057231463208"
+                    Point3="281.666666666667,120.057231463208" />
+                  <mssgle:LineSegment
+                    End="281.666666666667,224.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 17]"
+          TopLeft="686.166666666667,275.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="287.833333333333,180"
+              Start="0,0"
+              End="287.833333333333,172.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,97.8134357852554" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,97.8134357852554"
+                    Point2="0,101.813435785255"
+                    Point3="4,101.813435785255" />
+                  <mssgle:LineSegment
+                    End="283.833333333333,101.813435785255" />
+                  <mssgle:CubicBezierSegment
+                    Point1="283.833333333333,101.813435785255"
+                    Point2="287.833333333333,101.813435785255"
+                    Point3="287.833333333333,105.813435785255" />
+                  <mssgle:LineSegment
+                    End="287.833333333333,172.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 18]"
+          TopLeft="671.833333333333,330.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="213.066666666667,125"
+              Start="0,0"
+              End="213.066666666667,117.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,72.8172461894393" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,72.8172461894393"
+                    Point2="0,76.8172461894393"
+                    Point3="4,76.8172461894393" />
+                  <mssgle:LineSegment
+                    End="209.066666666667,76.8172461894393" />
+                  <mssgle:CubicBezierSegment
+                    Point1="209.066666666667,76.8172461894393"
+                    Point2="213.066666666667,76.8172461894393"
+                    Point3="213.066666666667,80.8172461894393" />
+                  <mssgle:LineSegment
+                    End="213.066666666667,117.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 19]"
+          TopLeft="680.5,385.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="253,70"
+              Start="0,0"
+              End="253,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.3720930232558" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.3720930232558"
+                    Point2="0,28.3720930232558"
+                    Point3="4,28.3720930232558" />
+                  <mssgle:LineSegment
+                    End="249,28.3720930232558" />
+                  <mssgle:CubicBezierSegment
+                    Point1="249,28.3720930232558"
+                    Point2="253,28.3720930232558"
+                    Point3="253,32.3720930232558" />
+                  <mssgle:LineSegment
+                    End="253,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="459.999982549085,436.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="192.000017450915,-50.600000123978"
+              Start="0,0"
+              End="192.000017450915,-43.100000123978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-16.5930233062701" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-16.5930233062701"
+                    Point2="0,-20.5930233062701"
+                    Point3="4,-20.5930233062701" />
+                  <mssgle:LineSegment
+                    End="188.000017450915,-20.5930233062701" />
+                  <mssgle:CubicBezierSegment
+                    Point1="188.000017450915,-20.5930233062701"
+                    Point2="192.000017450915,-20.5930233062701"
+                    Point3="192.000017450915,-24.5930233062701" />
+                  <mssgle:LineSegment
+                    End="192.000017450915,-43.100000123978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 20]"
+          TopLeft="744.5,423.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="104,53"
+              Start="0,0"
+              End="96.5,53">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="48,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48,0"
+                    Point2="52,0"
+                    Point3="52,4" />
+                  <mssgle:LineSegment
+                    End="52,49" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52,49"
+                    Point2="52,53"
+                    Point3="56,53" />
+                  <mssgle:LineSegment
+                    End="96.5,53" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 21]"
+          TopLeft="733.5,479.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115,0"
+              Start="0,0"
+              End="107.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="107.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 22]"
+          TopLeft="749.5,535.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99,-50.5"
+              Start="0,0"
+              End="91.5,-50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="58.0597014925373,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="58.0597014925373,0"
+                    Point2="62.0597014925373,0"
+                    Point3="62.0597014925373,-4" />
+                  <mssgle:LineSegment
+                    End="62.0597014925373,-46.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="62.0597014925373,-46.5"
+                    Point2="62.0597014925373,-50.5"
+                    Point3="66.0597014925373,-50.5" />
+                  <mssgle:LineSegment
+                    End="91.5,-50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 23]"
+          TopLeft="685.5,572.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="248,-75"
+              Start="0,0"
+              End="248,-67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-26.4195804195804" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-26.4195804195804"
+                    Point2="0,-30.4195804195804"
+                    Point3="4,-30.4195804195804" />
+                  <mssgle:LineSegment
+                    End="244,-30.4195804195804" />
+                  <mssgle:CubicBezierSegment
+                    Point1="244,-30.4195804195804"
+                    Point2="248,-30.4195804195804"
+                    Point3="248,-34.4195804195804" />
+                  <mssgle:LineSegment
+                    End="248,-67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 24]"
+          TopLeft="676.166666666667,626.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="230.333333333333,-129"
+              Start="0,0"
+              End="230.333333333333,-121.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-60.5512496388327" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-60.5512496388327"
+                    Point2="0,-64.5512496388327"
+                    Point3="4,-64.5512496388327" />
+                  <mssgle:LineSegment
+                    End="226.333333333333,-64.5512496388327" />
+                  <mssgle:CubicBezierSegment
+                    Point1="226.333333333333,-64.5512496388327"
+                    Point2="230.333333333333,-64.5512496388327"
+                    Point3="230.333333333333,-68.5512496388327" />
+                  <mssgle:LineSegment
+                    End="230.333333333333,-121.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 25]"
+          TopLeft="689.833333333333,678.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="284.166666666667,-181"
+              Start="0,0"
+              End="284.166666666667,-173.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-98.4076245225218" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-98.4076245225218"
+                    Point2="0,-102.407624522522"
+                    Point3="4,-102.407624522522" />
+                  <mssgle:LineSegment
+                    End="280.166666666667,-102.407624522522" />
+                  <mssgle:CubicBezierSegment
+                    Point1="280.166666666667,-102.407624522522"
+                    Point2="284.166666666667,-102.407624522522"
+                    Point3="284.166666666667,-106.407624522522" />
+                  <mssgle:LineSegment
+                    End="284.166666666667,-173.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 26]"
+          TopLeft="715.166666666667,729.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="266.933333333333,-232"
+              Start="0,0"
+              End="266.933333333333,-224.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-138.286565496695" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-138.286565496695"
+                    Point2="0,-142.286565496695"
+                    Point3="4,-142.286565496695" />
+                  <mssgle:LineSegment
+                    End="262.933333333333,-142.286565496695" />
+                  <mssgle:CubicBezierSegment
+                    Point1="262.933333333333,-142.286565496695"
+                    Point2="266.933333333333,-142.286565496695"
+                    Point3="266.933333333333,-146.286565496695" />
+                  <mssgle:LineSegment
+                    End="266.933333333333,-224.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 27]"
+          TopLeft="725.166666666667,778.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="262.333333333333,-281"
+              Start="0,0"
+              End="262.333333333333,-273.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-178.778925270037" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-178.778925270037"
+                    Point2="0,-182.778925270037"
+                    Point3="4,-182.778925270037" />
+                  <mssgle:LineSegment
+                    End="258.333333333333,-182.778925270037" />
+                  <mssgle:CubicBezierSegment
+                    Point1="258.333333333333,-182.778925270037"
+                    Point2="262.333333333333,-182.778925270037"
+                    Point3="262.333333333333,-186.778925270037" />
+                  <mssgle:LineSegment
+                    End="262.333333333333,-273.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="506.666649215752,451.433333457311">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.8333507842481,-27.9333334573113"
+              Start="0,0"
+              End="51.3333507842481,-27.9333334573113">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="20.8287535419763,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.8287535419763,0"
+                    Point2="24.8287535419763,0"
+                    Point3="24.8287535419763,-4" />
+                  <mssgle:LineSegment
+                    End="24.8287535419763,-23.9333334573113" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.8287535419763,-23.9333334573113"
+                    Point2="24.8287535419763,-27.9333334573113"
+                    Point3="28.8287535419763,-27.9333334573113" />
+                  <mssgle:LineSegment
+                    End="51.3333507842481,-27.9333334573113" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="506.666649215752,462.766666790645">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="65.8333507842481,14.7333332093554"
+              Start="0,0"
+              End="58.3333507842481,14.7333332093554">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="23.7828819823433,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.7828819823433,0"
+                    Point2="27.7828819823433,0"
+                    Point3="27.7828819823433,4" />
+                  <mssgle:LineSegment
+                    End="27.7828819823433,10.7333332093554" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.7828819823433,10.7333332093554"
+                    Point2="27.7828819823433,14.7333332093554"
+                    Point3="31.7828819823433,14.7333332093554" />
+                  <mssgle:LineSegment
+                    End="58.3333507842481,14.7333332093554" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="459.999982549085,478.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="200.000017450915,36.399999876022"
+              Start="0,0"
+              End="200.000017450915,28.899999876022">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.8139534379159" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.8139534379159"
+                    Point2="0,14.8139534379159"
+                    Point3="4,14.8139534379159" />
+                  <mssgle:LineSegment
+                    End="196.000017450915,14.8139534379159" />
+                  <mssgle:CubicBezierSegment
+                    Point1="196.000017450915,14.8139534379159"
+                    Point2="200.000017450915,14.8139534379159"
+                    Point3="200.000017450915,18.8139534379159" />
+                  <mssgle:LineSegment
+                    End="200.000017450915,28.899999876022" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="417.333315882419,478.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="241.166684117581,94.399999876022"
+              Start="0,0"
+              End="241.166684117581,86.899999876022">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4186046007065" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.4186046007065"
+                    Point2="0,38.4186046007065"
+                    Point3="4,38.4186046007065" />
+                  <mssgle:LineSegment
+                    End="237.166684117581,38.4186046007065" />
+                  <mssgle:CubicBezierSegment
+                    Point1="237.166684117581,38.4186046007065"
+                    Point2="241.166684117581,38.4186046007065"
+                    Point3="241.166684117581,42.4186046007065" />
+                  <mssgle:LineSegment
+                    End="241.166684117581,86.899999876022" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="470.666649215752,436.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="186.333350784248,-308.600000123978"
+              Start="0,0"
+              End="186.333350784248,-301.100000123978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-102.823076965992" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-102.823076965992"
+                    Point2="0,-106.823076965992"
+                    Point3="4,-106.823076965992" />
+                  <mssgle:LineSegment
+                    End="182.333350784248,-106.823076965992" />
+                  <mssgle:CubicBezierSegment
+                    Point1="182.333350784248,-106.823076965992"
+                    Point2="186.333350784248,-106.823076965992"
+                    Point3="186.333350784248,-110.823076965992" />
+                  <mssgle:LineSegment
+                    End="186.333350784248,-301.100000123978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="425.866649215752,436.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="223.133350784248,-263.600000123978"
+              Start="0,0"
+              End="223.133350784248,-256.100000123978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-114.106493562042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-114.106493562042"
+                    Point2="0,-118.106493562042"
+                    Point3="4,-118.106493562042" />
+                  <mssgle:LineSegment
+                    End="219.133350784248,-118.106493562042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="219.133350784248,-118.106493562042"
+                    Point2="223.133350784248,-118.106493562042"
+                    Point3="223.133350784248,-122.106493562042" />
+                  <mssgle:LineSegment
+                    End="223.133350784248,-256.100000123978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="459.999982549085,436.100000123978">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="193.000017450915,-212.600000123978"
+              Start="0,0"
+              End="193.000017450915,-205.100000123978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-82.5232558644097" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-82.5232558644097"
+                    Point2="0,-86.5232558644097"
+                    Point3="4,-86.5232558644097" />
+                  <mssgle:LineSegment
+                    End="189.000017450915,-86.5232558644097" />
+                  <mssgle:CubicBezierSegment
+                    Point1="189.000017450915,-86.5232558644097"
+                    Point2="193.000017450915,-86.5232558644097"
+                    Point3="193.000017450915,-90.5232558644097" />
+                  <mssgle:LineSegment
+                    End="193.000017450915,-205.100000123978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import CSV">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Import CSV\Flat File Source"
+          TopLeft="188.5,79.5441176478967" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Import CSV\ADO NET Destination"
+          TopLeft="592.5,38.63333333936" />
+        <EdgeLayout
+          Id="Package\Import CSV.Paths[Flat File Source Output]"
+          TopLeft="358.1,100.344117647897">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="234.4,-40.9107843085367"
+              Start="0,0"
+              End="226.9,-40.9107843085367">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="113.2,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="113.2,0"
+                    Point2="117.2,0"
+                    Point3="117.2,-4" />
+                  <mssgle:LineSegment
+                    End="117.2,-36.9107843085367" />
+                  <mssgle:CubicBezierSegment
+                    Point1="117.2,-36.9107843085367"
+                    Point2="117.2,-40.9107843085367"
+                    Point3="121.2,-40.9107843085367" />
+                  <mssgle:LineSegment
+                    End="226.9,-40.9107843085367" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import CSV\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
