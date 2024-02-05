@@ -238,6 +238,16 @@ race_state_flee = groupby_race_state_flee()
 mental_threat_arms = groupby_mental_threat_arms()
 
 
+#edit date
+shootings['day_of_month'] = shootings['date'].dt.day
+shootings['day_of_week_name'] = shootings['date'].dt.day_name()
+shootings['day_of_week_number'] = shootings['date'].dt.dayofweek
+shootings['month_number'] = shootings['date'].dt.month
+shootings['month_name'] = shootings['date'].dt.month_name()
+
+
+
+
 shootings['severity'] = shootings.apply(calculate_severity, axis=1)
 shootings.to_excel('severity.xlsx', index =False)
 shootings.to_csv('shootings2.csv', index = False)
