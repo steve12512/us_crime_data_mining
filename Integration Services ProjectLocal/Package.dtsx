@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="100"
-  DTS:VersionGUID="{0F1B8696-1291-4267-ABB7-57F488489B88}">
+  DTS:VersionBuild="104"
+  DTS:VersionGUID="{CA05B5E7-B66D-4B31-840C-B47A7C0B6B19}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -346,7 +346,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{AA009E2C-0C60-4DEE-B865-3AD30BA445BD}"
+              DTS:DTSID="{17753CFA-88F2-449B-8C19-1B6F3C91BCA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -355,7 +355,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="name"
-              DTS:DTSID="{A3BA3D8A-15A1-4CC1-AD39-86AC803422B4}"
+              DTS:DTSID="{3F422DB9-7F4D-476E-A118-EAE6E72E9AAD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -363,7 +363,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{5506315F-B492-4FBC-8E77-27D20C9E02D2}"
+              DTS:DTSID="{B31E9658-B9B6-444D-B465-469B2429854A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -372,7 +372,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="manner_of_death"
-              DTS:DTSID="{887BCF00-3546-4DC3-8E2A-451B2941B5F5}"
+              DTS:DTSID="{C2658A28-A243-46F0-8088-B158472FB961}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -381,7 +381,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="armed"
-              DTS:DTSID="{F19542C3-6D88-4BC9-8B74-24A4D68E915D}"
+              DTS:DTSID="{CEEC4E84-9680-48CA-AEE0-9EBF412D8C5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -389,7 +389,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="age"
-              DTS:DTSID="{2547AC02-9A89-47E9-A077-239198A4844C}"
+              DTS:DTSID="{F88DA633-6EA2-4B19-94B5-5D7334A69E34}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -398,7 +398,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="gender"
-              DTS:DTSID="{AA2E820E-B554-4305-A45E-E1B41921C9F6}"
+              DTS:DTSID="{18146451-D1A0-40CA-B83E-AD2F8BA041F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -407,7 +407,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="race"
-              DTS:DTSID="{2B3E5329-354D-4588-A58A-B6E24074AD1B}"
+              DTS:DTSID="{921D094C-C707-4CEA-B3E4-920209174DAE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -416,7 +416,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="city"
-              DTS:DTSID="{C7E44AFE-594D-45C1-8667-D6BEB875FF4D}"
+              DTS:DTSID="{5144A3C3-3E78-4792-81D1-5D783E2619AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -425,7 +425,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="state"
-              DTS:DTSID="{C49E7327-6022-4E3E-A2D4-DE8164F4934B}"
+              DTS:DTSID="{88623453-744C-43F8-A272-ED94F9A353E1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -433,7 +433,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="signs_of_mental_illness"
-              DTS:DTSID="{0B851B00-1603-4444-BCA7-2DBA3CA04ED9}"
+              DTS:DTSID="{CD12555C-E3C4-4BA0-92DF-272BDFE2079F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -442,7 +442,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="threat_level"
-              DTS:DTSID="{0979C6D7-3DBE-4831-B937-CCA8D2C68373}"
+              DTS:DTSID="{146D076C-F62A-4537-B014-82487395CA6D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -451,7 +451,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="flee"
-              DTS:DTSID="{29E47F32-E775-427D-8816-44E53A70E113}"
+              DTS:DTSID="{46137F0F-C4C6-42DF-9444-E95EEA3741D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -459,7 +459,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="body_camera"
-              DTS:DTSID="{168B73F9-E337-4361-83D1-2FBEBB0AD36D}"
+              DTS:DTSID="{AE4862B9-1691-4A2C-BC18-DBD03D02B814}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -468,7 +468,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="arms_category"
-              DTS:DTSID="{BA5BC789-FC11-4F01-A709-2A98D38A3BC9}"
+              DTS:DTSID="{EBCDE5D4-5A09-4DBF-89B7-4A2514C409D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -476,7 +476,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="severity"
-              DTS:DTSID="{04D26BF3-9F80-4D5C-94C9-80D493D7BC10}"
+              DTS:DTSID="{7B9AC564-58C9-40F2-8D7F-CD8F8D3C1BED}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -811,7 +811,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABXZp0v2Ec0acY41ErzR5owAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACVkNEV2XLo6MqIS2z/sHq0rq59JlpygkBXD/Xbv2eJ5gAAAAAOgAAAAAIAACAAAADrWZXkaJQ9573HaYqq6804LV6JUwWw5HsogOWOfhZpKiAAAABrtVmgop8+M/4XIPe+jtpeBA8pQ2+y1yucXUgfBh+jmEAAAAC0aRHbvvyKyjJnEgxTIOFuQ1uLhMaH2VhpRXkgqUCbJMOEUs5pFGpu3MoKhcrUU1ecJyIVKL7D+6xEjJsDlq2e</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABXZp0v2Ec0acY41ErzR5owAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAYL1nleGd+AyJm/eZ5Hatf1F73X13W0C+lmcO+4l4hPQAAAAAOgAAAAAIAACAAAAAcgH2lAATpP7mkbPiAd2b82+/UHO9qrfHsrIp7lN0euCAAAABSNZos+Q5vO0B+EbcctVKVuRjVmwitO8dYWwDdfFzFc0AAAAAuQr3W3XRZB/WhEuDQlL2yALqowiIv8zzmza9EBQUPYoUjbzRqv9RJS70+8AQsNKpjueuB6KUsQy0H7sr+ORA3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1667,7 +1667,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Age Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="11">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1684,7 +1684,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Armed Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="8">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1701,7 +1701,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Arms Category Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="9">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1718,7 +1718,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Body Camera Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="9">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1735,7 +1735,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update City Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="8">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1786,7 +1786,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Flee Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="7">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1803,7 +1803,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Gender Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1820,7 +1820,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Manner of Death Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1837,7 +1837,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Mental Ilness Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="11">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1854,7 +1854,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Name Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="13">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1871,7 +1871,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Race Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="7">
+      DTS:ThreadHint="10">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1888,7 +1888,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update State Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="13">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1905,7 +1905,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Threat Level Dim"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="10">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3193,7 +3193,7 @@
     design-time-name="Package\Import CSV">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170,42"
           Id="Package\Import CSV\Flat File Source"
@@ -3233,9 +3233,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="91.93642578125,1,50.5271484375,11.2431640625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
