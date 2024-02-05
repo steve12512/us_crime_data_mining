@@ -244,7 +244,7 @@ shootings['day_of_week_name'] = shootings['date'].dt.day_name()
 shootings['day_of_week_number'] = shootings['date'].dt.dayofweek
 shootings['month_number'] = shootings['date'].dt.month
 shootings['month_name'] = shootings['date'].dt.month_name()
-
+shootings['year'] = shootings['date'].dt.year
 
 
 
