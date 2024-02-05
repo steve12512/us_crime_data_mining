@@ -1,0 +1,152 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>MultidimensionalProjectLocal</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>yLldFR3UM4oKwkW40wCndIWa504=2/5/2024 6:36:15 PM2/5/2024 6:36:15 PM</TimeStamp>
+        <ID>
+          <String>Shootings</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>sh3t2R6qJtqDRvZCfspM1ao3RoE=2/5/2024 6:36:33 PM2/5/2024 6:36:33 PM</TimeStamp>
+        <ID>
+          <String>Shootings</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yxw+xq6v2ENZx/dcpPVYYxGXfw4=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Signs Of Mental Illness Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6Asdrmq5gY7xi0x7jgU6i01V9W4=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Threat Level Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CNlZMQX08HYePYIpgeZID8BWDGc=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>City Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zuLS0HmaudBRrpFcOY6fak9EqLo=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Age Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p8OtOjrbJfEqOJM6k9Y+AmOpAko=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Name Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pUt4tdVd6j1ebqY3vSejyVNHqto=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>State Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CjNoiCcURkwy7eR79s7uXVgqc/s=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Race Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cNdir7dkmBnBnCHKoPducsiFfNE=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Body Camera Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zdoizRXREGjKT7BQ+5RBeJDzrlo=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Armed Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gH7qbVz4zQ3DAuIlgPCdCL5DE28=2/5/2024 6:37:00 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Date Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZhZlLbf7ef75QMjhTPtpGs9x3iY=2/5/2024 6:37:00 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Flee Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ljwl8Ofq/jjiXM1+Q36BtXr8mwM=2/5/2024 6:37:00 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Gender Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>R7rG5cBCaHg4hZEdjJP8MdWfAnA=2/5/2024 6:37:00 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Manner Of Death Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yrxNGOhS6Fak4TpeWy8zAgGekII=2/5/2024 6:37:00 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Arms Cat Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>oYWOn4tNT2ocSron3pwFvTHm/30=2/5/2024 6:37:00 PM2/5/2024 6:36:59 PMJm9FgLsROQ/XPbCRQ3pP0mYMiWk=2/5/2024 6:36:59 PM2/5/2024 6:36:59 PM</TimeStamp>
+        <ID>
+          <String>Shootings</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>miaXHsAj5mJKcVqZwbew/37f23M=2/5/2024 6:35:43 PM2/5/2024 6:35:43 PM</TimeStamp>
+      <ID>
+        <String>MultidimensionalProjectLocal</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-02-05T16:37:42.876667Z</LastDeployed>
+</DeploymentSnapshot>
