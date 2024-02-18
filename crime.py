@@ -108,13 +108,13 @@ def calculate_severity(row):
 }
     mental_illness_value = 40 if row['signs_of_mental_illness'] else 0
 
-    threat_level_values = {'attack': 90, 'undetermined': 40, 'other': 10}
+    threat_level_values = {'attack': 70, 'undetermined': 20, 'other': 10}
 
     armed_value = armed_values.get(row['armed'], 0)
     threat_level_value = threat_level_values.get(row['threat_level'], 0)
 
     # Calculate the severity based on the weighted sum of values
-    severity = (0.4 * armed_value + 0.2 * mental_illness_value + 0.4 * threat_level_value)
+    severity = (0.45 * armed_value + 0.2 * mental_illness_value + 0.35 * threat_level_value)
     return severity
 
 
