@@ -221,7 +221,7 @@ def groupby_state_year():
     state_year['state_pop'] = state_year['state_x'].map(population_dictionary)
 
     #now we want to take the above groupby and calculate the incidents per 100k of its population
-    state_year['per 100k of its population'] = state_year['incidents_per_state_per_year'] / state_year['state_pop'] * 1000
+    state_year['per 100k of its population'] = state_year['incidents_per_state_per_year'] / state_year['state_pop'] * 100000
 
     #take the above groupby and order by count descending, to see which state remains the most violent one
     stateord_year = state_year.sort_values(by = 'incidents_per_state_per_year', ascending = False)
