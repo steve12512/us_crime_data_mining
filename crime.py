@@ -1,6 +1,11 @@
 #import what you have to
 import pandas as pd 
 import numpy as np 
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+from kmodes.kprototypes import KPrototypes
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
 
 #display max columns
 pd.set_option('display.max_columns', None)  # Set to None to display all columns
@@ -133,7 +138,7 @@ def get_mental_illness():
     var = shootings2[shootings2['signs_of_mental_illness'] == True]
 
     percentage = (len(var) / len(shootings)) * 100
-    print('percentage of mentally ill', percentage)
+    #print('percentage of mentally ill', percentage)
     return var
 
 def get_armed_mental_illness():
@@ -144,7 +149,7 @@ def get_armed_mental_illness():
 
     armed_mental = shootings2[(shootings2['signs_of_mental_illness'] == True) & (shootings2['arms_category'] == 'Guns')]
     armed_mental_percentage = len(armed_mental) / len(shootings2) * 100
-    print('mentally ill and with real guns', armed_mental_percentage)
+    #print('mentally ill and with real guns', armed_mental_percentage)
     return armed_mental
 
 
@@ -156,7 +161,7 @@ def get_mental_toygun():
 
     #find the mentally ill with toyguns
     toy_weapon = shootings2[(shootings2['signs_of_mental_illness'] == True) & (shootings2['armed'] == 'toy weapon')]
-    print('mentally ill with toyguns',len(toy_weapon))
+    #print('mentally ill with toyguns',len(toy_weapon))
 
     return toy_weapon
 
@@ -173,9 +178,9 @@ def get_peace_sane_unarmed():
     #find the percentage of those, that were black or hispanic
     color = len (var[ (var['race']  == 'black')  | (var['race'] == 'Hispanic') ])  / len(var) *100
 
-    print('length of unarmed,unthreatening,not mentally unstable is; ', len(var))
-    print('of which, the ', color, ' were black and hispanic')
-    print('we have not reached any conclusion that would indicate a racial bias based on the numbers.')
+    #print('length of unarmed,unthreatening,not mentally unstable is; ', len(var))
+    #print('of which, the ', color, ' were black and hispanic')
+    #print('we have not reached any conclusion that would indicate a racial bias based on the numbers.')
 
     return var
 
@@ -189,8 +194,8 @@ def get_color():
     var = shootings2[(shootings2['race'] == 'Black') | (shootings2['race'] == 'Hispanic')]
     percentage = len(var) / len(shootings2) * 100
 
-    print('Black and Hispanic people make up ', percentage, ' of the dataset')
-    print('Again we cannot reach any conclusion that indicates a racial motivation to lie within the general tendecy.')
+    #print('Black and Hispanic people make up ', percentage, ' of the dataset')
+    #print('Again we cannot reach any conclusion that indicates a racial motivation to lie within the general tendecy.')
     return var
 
 #the functions below return dataframes that will be used for creating the datacube
@@ -238,9 +243,9 @@ def groupby_state_year():
     map_state_codes(state_year,stateord_year, state_yearord, state_dictionary)
     modify_dataframes(state_year, stateord_year, state_yearord)
    
-    print('\n police shootings grouped by; state, year, sorted per 100k of its population\n', state_year.head(30))
-    print('\npolice shootings grouped by;state, year, sorted by number of state incidents \n', stateord_year.head(30))
-    print('\npolice shootings grouped by; state, year,sorted by year and then sorted by incidents per 100k of each state\'s population  \n', state_yearord.head(30))
+    #print('\n police shootings grouped by; state, year, sorted per 100k of its population\n', state_year.head(30))
+    #print('\npolice shootings grouped by;state, year, sorted by number of state incidents \n', stateord_year.head(30))
+    #print('\npolice shootings grouped by; state, year,sorted by year and then sorted by incidents per 100k of each state\'s population  \n', state_yearord.head(30))
     state_yearord.to_csv('state_per_100k.csv')
 
     return state_year, stateord_year, state_yearord
@@ -256,9 +261,9 @@ def map_state_codes(a,b,c, f):
 def get_female():
     #this function returns a dataframe where the victims were women
     var = shootings[shootings['gender'] == 'F']
-    print('\n percentage of female shootings is; ', len(var) / len(shootings) * 100, '%')
-    print('\n of which ', len(var[var['armed'] == 'gun']) / len(var) * 100, ' were armed with guns \n ')
-    print('whereas men, whose shootings make up 95,46%\ of the dataset, had an armed with guns percentage of; ', len(shootings[(shootings['gender'] == 'M') & (shootings['armed'] == 'gun')]) / len(shootings[(shootings['gender'] == 'M')]) * 100, '%\n')
+    #print('\n percentage of female shootings is; ', len(var) / len(shootings) * 100, '%')
+    #print('\n of which ', len(var[var['armed'] == 'gun']) / len(var) * 100, ' were armed with guns \n ')
+    #print('whereas men, whose shootings make up 95,46%\ of the dataset, had an armed with guns percentage of; ', len(shootings[(shootings['gender'] == 'M') & (shootings['armed'] == 'gun')]) / len(shootings[(shootings['gender'] == 'M')]) * 100, '%\n')
     return var
 
 
@@ -273,7 +278,7 @@ def modify_dataframes(a,b,c):
 def groupby_race_state_flee():
     #this functions does a group by race, state and whether or not the suspect was fleeing
     race_state_flee = df.groupby(['race','state','flee'])
-    print('\ngrouped by race, state, and whether or not the suspect attempted to flee \n ', race_state_flee.head(20))
+    #print('\ngrouped by race, state, and whether or not the suspect attempted to flee \n ', race_state_flee.head(20))
 
     return race_state_flee
 
@@ -281,21 +286,67 @@ def groupby_mental_threat_arms():
     #this function returns a groupby whether or not the suspect had shown signs of mentall illness, was a threat and whether or not he/she was armed
     
     mental_threat_arms = df.groupby(['signs_of_mental_illness', 'threat_level', 'arms_category'])
-    print('\n grouped by whether or not the suspcet had shown signs of mental illness, his threat level and his arms category', mental_threat_arms.head(30))
+    #print('\n grouped by whether or not the suspcet had shown signs of mental illness, his threat level and his arms category', mental_threat_arms.head(30))
 
     return mental_threat_arms
+
+
+def clusters():
+    #here we will proceed with our creation of clusters
+
+    #first make a copy of our dataframe
+    df = shootings.copy()
+    df = df.drop(columns=['id','name'],errors='ignore')
+
+    #encode string variables
+    df = pd.get_dummies(df, columns=['race', 'state', 'signs_of_mental_illness', 'threat_level', 'flee', 'body_camera', 'arms_category'])
+
+    #standardize our data
+    scaler = StandardScaler()
+    df['severity_scaled'] = scaler.fit_transform(df[['severity']])
+
+    #extract some date specific attributes
+    df['year'] = df['date'].dt.year
+    df['month'] = df['date'].dt.month
+    df['day_of_week'] = df['date'].dt.dayofweek
+
+    #select the data upon which we will be running our algorithm
+    #of course, we have to reduce a lot of that data
+
+    selected_features = df[['severity_scaled', 'race_Asian', 'race_Black', 'race_Hispanic', 'race_Native',
+       'race_Other', 'race_White' ]]
+
+    kproto = KPrototypes(n_clusters=3, init='Cao', verbose=2)
+    df['cluster'] = kproto.fit_predict(selected_features.values, categorical=list(range(4, len(selected_features.columns))))
+
+
+    # Assuming df_clustered is your DataFrame with 'cluster' column from KPrototypes
+    # Exclude 'date' and 'cluster' columns from PCA
+    pca_columns = [col for col in selected_features.columns if col not in ['date', 'cluster']]
+    pca = PCA(n_components=7)
+    reduced_features = pca.fit_transform(selected_features[pca_columns])
+
+    # Scatter plot with legend
+    scatter = plt.scatter(reduced_features[:, 0], reduced_features[:, 1], c=df['cluster'], cmap='viridis')
+    plt.title('KPrototypes Clusters (2D)')  
+    plt.xlabel('standardized_severity')
+    plt.ylabel('race')
+
+
+    # Add legend
+    legend_labels = [f'Cluster {i}' for i in range(max(df['cluster']) + 1)]
+    plt.legend(handles=scatter.legend_elements()[0], labels=legend_labels, title='Clusters', loc='lower right')
+
+    plt.show()
+
 
 
 
 
 #START OF PROGRAM
 
-
-
-
 #convert date into a datetime object
 shootings['date'] = pd.to_datetime(shootings['date'])
-print(shootings.dtypes)
 
 #keep a copy of the dataframe to operate upob
 df = shootings.copy()
@@ -337,3 +388,6 @@ shootings['year'] = shootings['date'].dt.year
 shootings['severity'] = shootings.apply(calculate_severity, axis=1)
 shootings.to_excel('severity.xlsx', index =False)
 shootings.to_csv('shootings2.csv', index = False)
+
+#run the clustering algorithm
+clusters()
