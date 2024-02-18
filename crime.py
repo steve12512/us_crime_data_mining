@@ -241,6 +241,7 @@ def groupby_state_year():
     print('\n police shootings grouped by; state, year, sorted per 100k of its population\n', state_year.head(30))
     print('\npolice shootings grouped by;state, year, sorted by number of state incidents \n', stateord_year.head(30))
     print('\npolice shootings grouped by; state, year,sorted by year and then sorted by incidents per 100k of each state\'s population  \n', state_yearord.head(30))
+    state_yearord.to_csv('state_per_100k.csv')
 
     return state_year, stateord_year, state_yearord
 
@@ -290,8 +291,7 @@ def groupby_mental_threat_arms():
 #START OF PROGRAM
 
 
-#START OF ETL
-#print(shootings.head(5))
+
 
 #convert date into a datetime object
 shootings['date'] = pd.to_datetime(shootings['date'])
