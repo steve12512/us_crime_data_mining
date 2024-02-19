@@ -369,7 +369,7 @@ def regression_df(shootings):
 
     #group by race, year and count
 
-    reg_df = df.groupby(['race', 'year']).size().reset_index(name = ' incidents per race per year')
+    reg_df = df.groupby(['race', 'year']).size().reset_index(name = 'incidents per race per year')
     #print(reg_df.head(20))
 
     return reg_df
@@ -395,7 +395,7 @@ def regression(a):
 
     # Extracting features (X) and target variable (y)
     X = a[['year']]
-    y = a[' incidents per race per year']
+    y = a['incidents per race per year']
 
     # Splitting the dataset into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
