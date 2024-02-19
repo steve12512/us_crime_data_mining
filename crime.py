@@ -25,6 +25,8 @@ pd.set_option('display.max_columns', None)  # Set to None to display all columns
 
 #read the files
 shootings = pd.read_csv('shootings.csv')
+shootings['age'] = pd.to_numeric(shootings['age'], errors='coerce').fillna(-1).astype(int)
+
 population = pd.read_csv('us_pop_by_state.csv')
 
 
