@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from kmodes.kprototypes import KPrototypes
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
+import statsmodels.api as sm
 
 #display max columns
 pd.set_option('display.max_columns', None)  # Set to None to display all columns
@@ -341,6 +342,54 @@ def clusters():
 
 
 
+def regression():
+    #here we are going to run a regression model for our code
+
+    #first let us make a copy of our dataframe, to operate upon
+    df = shootings.copy()
+
+
+     # Group by 'race' and calculate the mean severity and count the occurrences
+    race_stats_df = df.groupby('race').agg({'severity': 'mean', 'id': 'count'}).reset_index()
+    race_stats_df.rename(columns={'severity_y' : 'race_mean', 'id': 'race_shooting_count'}, inplace=True)
+    print(df.columns)
+    # Merge the statistics back into the original DataFrame
+    df = pd.merge(df, race_stats_df, on='race', how='left')
+    print(df.head(10))
+
+
+    # Encode strings
+    df = pd.get_dummies(df, columns=['race', 'signs_of_mental_illness'])
+
+
+
+    # Convert 'race_Asian' to numeric
+    df['race_Asian'] = pd.to_numeric(df['race_Asian'], errors='coerce')
+    # Drop rows with missing or non-numeric values in 'race_Asian'
+    df = df.dropna(subset=['race_Asian'])
+    print(df.columns)
+
+    # Define regression variables
+    X = df[['race_Asian']]
+    y = df['signs_of_mental_illness_True']
+
+    # Add a constant term for the intercept
+    X = sm.add_constant(X)
+
+    # Fit logistic regression model
+    logistic_model = sm.Logit(y, X).fit()
+
+    # Print model summary
+    print(logistic_model.summary())
+
+
+
+
+
+
+
+
+
 
 
 #START OF PROGRAM
@@ -390,4 +439,7 @@ shootings.to_excel('severity.xlsx', index =False)
 shootings.to_csv('shootings2.csv', index = False)
 
 #run the clustering algorithm
-clusters()
+#clusters()
+
+#or better, let us run a regression model
+regression()
