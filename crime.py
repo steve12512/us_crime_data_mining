@@ -369,8 +369,8 @@ def regression_df(shootings):
 
     #group by race, year and count
 
-    reg_df = df.groupby(['race', 'year']).size().reset_index(name = 'incidents per race per year')
-    #print(reg_df.head(20))
+    reg_df = df.groupby(['race', 'year']).agg({'id' : 'count', 'severity' : 'mean'}).reset_index()
+    reg_df = reg_df.rename(columns={'id': 'incidents_per_race_per_year'})
 
     return reg_df
 
@@ -386,16 +386,9 @@ def regression_df(shootings):
 def regression(a):
    #here we will be running our regression model
     
-   # Assuming you have a DataFrame named 'df' with columns 'year' and 'incidents'
-    # Replace 'your_data.csv' with the actual filename or path to your dataset.
-    # df = pd.read_csv('your_data.csv')
-
-    # Assuming you have the following columns in your DataFrame: 'year', 'incidents'
-    # If not, adjust the column names accordingly.
-
-    # Extracting features (X) and target variable (y)
-    X = a[['year']]
-    y = a['incidents per race per year']
+   # Extracting features (X) and target variable (y)
+    X = a[['year', 'severity']]
+    y = a['incidents_per_race_per_year']
 
     # Splitting the dataset into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
@@ -414,16 +407,15 @@ def regression(a):
     print(f'Mean Squared Error: {mse}')
     print(f'R-squared: {r2}')
 
-    # Visualizing the regression line
-    plt.scatter(X_test, y_test, color='black', label='Actual data')
-    plt.plot(X_test, y_pred, color='blue', linewidth=3, label='Regression line')
+    ## Visualizing the regression line along with the scatter plot
+    plt.scatter(X_test['year'], y_test, color='black', label='Actual data')
+    plt.scatter(X_test['year'], y_pred, color='blue', linewidth=3, label='Predicted data')
+    plt.plot(X_test['year'], y_pred, color='red', linewidth=2, label='Regression line')
     plt.xlabel('Year')
     plt.ylabel('Incidents')
     plt.title('Linear Regression')
     plt.legend()
     plt.show()
-
-
 
 #START OF PROGRAM
 
