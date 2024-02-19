@@ -11,7 +11,12 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 from statsmodels.tsa.arima.model import ARIMA
-
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import roc_curve, auc
 
 
 #display max columns
@@ -473,6 +478,138 @@ df['year'] = pd.to_datetime(df['date']).dt.year
 
 #add counts per race
 
+def log_reg(shootings):
+
+    df = shootings.copy()
+
+    X = pd.get_dummies(df[['age', 'gender', 'race', 'threat_level', 'flee']])
+    y = df['signs_of_mental_illness']  # or 'manner_of_death' depending on your goal
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    model = LogisticRegression()
+    model.fit(X_train, y_train)
+
+    #sns.countplot(x='age', hue='body_camera', data=df)
+    #plt.title('Count Plot of Body Camera Presence by Age')
+   # plt.xlabel('Age')
+    #plt.ylabel('Count')
+    #plt.show()
+
+    y_pred = model.predict(X_test)
+    cm = confusion_matrix(y_test, y_pred)
+
+    sns.heatmap(cm, annot=True, fmt='g', cmap='Blues', cbar=False)
+    plt.xlabel('Predicted Labels')
+    plt.ylabel('True Labels')
+    plt.title('Confusion Matrix')
+    plt.show()
+
+    #CONFUSION MATRIX
+    #Confusion Matrix:The confusion matrix provides a detailed breakdown of the model's predictions, showing the number of True Positives, True Negatives, False Positives, and False Negatives. It is a useful tool for understanding the types of errors the model is making.
+
+
+
+
+
+
+    
+    y_prob = model.predict_proba(X_test)[:, 1]
+    fpr, tpr, _ = roc_curve(y_test, y_prob)
+    roc_auc = auc(fpr, tpr)
+
+    plt.figure(figsize=(8, 6))
+    plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (area = {:.2f})'.format(roc_auc))
+    plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic (ROC) Curve')
+    plt.legend(loc='lower right')
+    plt.show()
+
+
+    #ROC CURVE
+    #The ROC curve (Receiver Operating Characteristic) visually represents the trade-off between the True Positive Rate and False Positive Rate across different probability thresholds. The Area Under the Curve (AUC) quantifies the overall performance of the model. It helps evaluate the model's ability to distinguish between positive and negative instances.
+
+
+
+
+
+
+
+
+
+
+
+
+    coef_df = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_[0]})
+    coef_df = coef_df.sort_values(by='Coefficient', ascending=False)
+
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='Coefficient', y='Feature', data=coef_df, palette='viridis')
+    plt.title('Logistic Regression Coefficients')
+    plt.show()
+
+
+    #COEFFICIENTS
+    #The bar plot of feature coefficients provides insights into the impact of each feature on the model's predictions. Positive coefficients suggest a positive influence on the log-odds of the positive class, while negative coefficients suggest a negative influence.
+
+
+
+
+
+
+    # Assuming df is your DataFrame
+
+    # Convert 'age' to numeric, handle non-numeric values by coercing to NaN
+    df['age'] = pd.to_numeric(df['age'], errors='coerce')
+
+    print(df.dtypes)
+
+    # Add a constant for the intercept term
+    X = sm.add_constant(df[['age']])
+    y = df['signs_of_mental_illness']
+
+    # Create the model
+    model = sm.Logit(y, X)
+
+    try:
+        # Try fitting the model
+        result = model.fit()
+        print(result.summary())
+    except ValueError as e:
+        print("Error:", e)
+
+
+    # Visualize the logistic regression line
+    plt.figure(figsize=(8, 6))
+    sns.scatterplot(x='age', y=y.name, data=df, alpha=0.5)
+    sns.lineplot(x=df['age'], y=result.predict(X), color='red', label='Logistic Regression')
+    plt.xlabel('Age')
+    plt.ylabel('Probability of Signs of Mental Illness')
+    plt.title('Logistic Regression Line and Scatter Plot: Age vs. Probability of Signs of Mental Illness')
+    plt.legend()
+    plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -516,15 +653,17 @@ reg_df = reg_df[reg_df['year'] != 2020]
 
 black = reg_df[reg_df['race'] == 'Black']
 print(black.dtypes)
-arimadef(black)
+#arimadef(black)
 
 
 white = reg_df[reg_df['race'] == 'White']
-arimadef(white)
+#arimadef(white)
 
 asian = reg_df[reg_df['race'] == 'Asian']
-arimadef(asian)
+#arimadef(asian)
 
 
 hispanic = reg_df[reg_df['race'] == 'Hispanic']
-arimadef(hispanic)
+#arimadef(hispanic)
+
+log_reg(shootings)
