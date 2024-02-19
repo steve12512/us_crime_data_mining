@@ -398,7 +398,7 @@ def regression(a):
     y = a[' incidents per race per year']
 
     # Splitting the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
     # Creating and fitting the linear regression model
     model = LinearRegression()
@@ -480,6 +480,11 @@ shootings = add_raceCount(shootings)
 
 
 reg_df = regression_df(shootings)
+reg_df = reg_df[reg_df['year'] != 2020]
+
+
+
+
 
 black = reg_df[reg_df['race'] == 'Black']
 print(black.head(10))
