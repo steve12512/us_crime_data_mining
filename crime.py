@@ -7,6 +7,11 @@ from kmodes.kprototypes import KPrototypes
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
+
+
 
 #display max columns
 pd.set_option('display.max_columns', None)  # Set to None to display all columns
@@ -378,28 +383,45 @@ def regression_df(shootings):
 
 
 
-def regression(reg_df):
+def regression(a):
    #here we will be running our regression model
     
-    # Encode the 'race' column using one-hot encoding
-    reg_df_encoded = pd.get_dummies(reg_df, columns=['race'], prefix='race', drop_first=True)
+   # Assuming you have a DataFrame named 'df' with columns 'year' and 'incidents'
+    # Replace 'your_data.csv' with the actual filename or path to your dataset.
+    # df = pd.read_csv('your_data.csv')
 
-    # Define regression variables
-    X = reg_df_encoded[['race_Asian', 'race_Black', 'race_Hispanic', 'race_Native', 'race_Other', 'race_White', 'year']]
-    y = reg_df_encoded['incidents_per_race_per_year']
+    # Assuming you have the following columns in your DataFrame: 'year', 'incidents'
+    # If not, adjust the column names accordingly.
 
-    # Add a constant term for the intercept
-    X = sm.add_constant(X)
+    # Extracting features (X) and target variable (y)
+    X = a[['year']]
+    y = a[' incidents per race per year']
 
-    try:
-        # Fit OLS regression model
-        ols_model = sm.OLS(y, X).fit()
+    # Splitting the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-        # Print model summary
-        print(ols_model.summary())
+    # Creating and fitting the linear regression model
+    model = LinearRegression()
+    model.fit(X_train, y_train)
 
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    # Making predictions on the test set
+    y_pred = model.predict(X_test)
+
+    # Evaluating the model
+    mse = mean_squared_error(y_test, y_pred)
+    r2 = r2_score(y_test, y_pred)
+
+    print(f'Mean Squared Error: {mse}')
+    print(f'R-squared: {r2}')
+
+    # Visualizing the regression line
+    plt.scatter(X_test, y_test, color='black', label='Actual data')
+    plt.plot(X_test, y_pred, color='blue', linewidth=3, label='Regression line')
+    plt.xlabel('Year')
+    plt.ylabel('Incidents')
+    plt.title('Linear Regression')
+    plt.legend()
+    plt.show()
 
 
 
@@ -458,4 +480,9 @@ shootings = add_raceCount(shootings)
 
 
 reg_df = regression_df(shootings)
-#regression()
+
+black = reg_df[reg_df['race'] == 'Black']
+print(black.head(10))
+print(black.dtypes)
+
+regression(black)
