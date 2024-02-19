@@ -10,6 +10,7 @@ import statsmodels.api as sm
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
+from statsmodels.tsa.arima.model import ARIMA
 
 
 
@@ -374,24 +375,42 @@ def regression_df(shootings):
 
     return reg_df
 
+def arimadef(df):
+        
+    # Assuming 'df' is your DataFrame with columns 'year' and 'incidents'
+    # Extracting features (X) and target variable (y)
+    X = df['year']
+    y = df['incidents_per_race_per_year']
 
+    # Fit ARIMA model
+    model = ARIMA(y, order=(1,1,1))  # Set appropriate values for p, d, q
+    results = model.fit()
 
+    # Forecast future years
+    future_years = [2020, 2021,2022,2023,2024,2025]  # Replace with the years you want to predict
+    forecast = results.get_forecast(steps=len(future_years))
+    forecast_values = forecast.predicted_mean
 
-
+    # Visualize results
+    plt.plot(X, y, label='Actual data')
+    plt.plot(future_years, forecast_values, label='Forecasted values', linestyle='dashed')
+    plt.xlabel('Year')
+    plt.ylabel('Incidents')
+    plt.title('ARIMA Forecasting')
+    plt.legend()
+    plt.show()
 
 
 
 
 
 def regression(a):
-   #here we will be running our regression model
-    
-   # Extracting features (X) and target variable (y)
-    X = a[['year', 'severity']]
+
+    X = a[['year']]
     y = a['incidents_per_race_per_year']
 
     # Splitting the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
 
     # Creating and fitting the linear regression model
     model = LinearRegression()
@@ -407,15 +426,35 @@ def regression(a):
     print(f'Mean Squared Error: {mse}')
     print(f'R-squared: {r2}')
 
-    ## Visualizing the regression line along with the scatter plot
+    # Visualizing the regression line along with the scatter plot
     plt.scatter(X_test['year'], y_test, color='black', label='Actual data')
     plt.scatter(X_test['year'], y_pred, color='blue', linewidth=3, label='Predicted data')
     plt.plot(X_test['year'], y_pred, color='red', linewidth=2, label='Regression line')
+
+    # Adding future years to the dataset
+    future_years = pd.DataFrame({'year': [2022, 2023, 2024]})  # Add more years as needed
+    future_predictions = model.predict(future_years)
+
+    # Plotting future predictions
+    plt.scatter(future_years['year'], future_predictions, color='green', marker='s', label='Future predictions')
+
     plt.xlabel('Year')
     plt.ylabel('Incidents')
-    plt.title('Linear Regression')
+    plt.title('Linear Regression with Future Predictions')
     plt.legend()
     plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
 
 #START OF PROGRAM
 
@@ -475,11 +514,17 @@ reg_df = regression_df(shootings)
 reg_df = reg_df[reg_df['year'] != 2020]
 
 
-
-
-
 black = reg_df[reg_df['race'] == 'Black']
-print(black.head(10))
 print(black.dtypes)
+arimadef(black)
 
-regression(black)
+
+white = reg_df[reg_df['race'] == 'White']
+arimadef(white)
+
+asian = reg_df[reg_df['race'] == 'Asian']
+arimadef(asian)
+
+
+hispanic = reg_df[reg_df['race'] == 'Hispanic']
+arimadef(hispanic)
