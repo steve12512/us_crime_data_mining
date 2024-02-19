@@ -125,7 +125,21 @@ def calculate_severity(row):
 
 
 
+def add_raceCount(shootings):
+    #here we will be adding a new column to our dataframe, that counts the incidents per race
 
+    #copy the shootings dataframe
+    df = shootings.copy()
+
+    #group by race and count its incidents
+    df = df.groupby('race').size().reset_index(name = 'race_incidents')
+
+    #append our new column to the shootings dataframe
+    shootings = pd.merge(shootings, df, left_on='race', right_on='race', how='left')
+
+    return shootings
+
+    
 
 
 
@@ -341,54 +355,51 @@ def clusters():
     plt.show()
 
 
-
-def regression():
-    #here we are going to run a regression model for our code
+def regression_df(shootings):
+    #here we will be modifying the dataframe we need for our regression model
+     #here we are going to run a regression model for our code
 
     #first let us make a copy of our dataframe, to operate upon
-    df = shootings.copy()
+    reg_df = shootings.copy()
 
+    #group by race, year and count
 
-     # Group by 'race' and calculate the mean severity and count the occurrences
-    race_stats_df = df.groupby('race').agg({'severity': 'mean', 'id': 'count'}).reset_index()
-    race_stats_df.rename(columns={'severity_y' : 'race_mean', 'id': 'race_shooting_count'}, inplace=True)
-    print(df.columns)
-    # Merge the statistics back into the original DataFrame
-    df = pd.merge(df, race_stats_df, on='race', how='left')
-    print(df.head(10))
+    reg_df = df.groupby(['race', 'year']).size().reset_index(name = ' incidents per race per year')
+    #print(reg_df.head(20))
 
-
-    # Encode strings
-    df = pd.get_dummies(df, columns=['race', 'signs_of_mental_illness'])
+    return reg_df
 
 
 
-    # Convert 'race_Asian' to numeric
-    df['race_Asian'] = pd.to_numeric(df['race_Asian'], errors='coerce')
-    # Drop rows with missing or non-numeric values in 'race_Asian'
-    df = df.dropna(subset=['race_Asian'])
-    print(df.columns)
+
+
+
+
+
+
+
+def regression(reg_df):
+   #here we will be running our regression model
+    
+    # Encode the 'race' column using one-hot encoding
+    reg_df_encoded = pd.get_dummies(reg_df, columns=['race'], prefix='race', drop_first=True)
 
     # Define regression variables
-    X = df[['race_Asian']]
-    y = df['signs_of_mental_illness_True']
+    X = reg_df_encoded[['race_Asian', 'race_Black', 'race_Hispanic', 'race_Native', 'race_Other', 'race_White', 'year']]
+    y = reg_df_encoded['incidents_per_race_per_year']
 
     # Add a constant term for the intercept
     X = sm.add_constant(X)
 
-    # Fit logistic regression model
-    logistic_model = sm.Logit(y, X).fit()
+    try:
+        # Fit OLS regression model
+        ols_model = sm.OLS(y, X).fit()
 
-    # Print model summary
-    print(logistic_model.summary())
+        # Print model summary
+        print(ols_model.summary())
 
-
-
-
-
-
-
-
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 
 
@@ -407,6 +418,11 @@ df['year'] = pd.to_datetime(df['date']).dt.year
 #armed == df where people were armed
 #color == df where people are black or hispanic
 
+#add counts per race
+
+
+
+
 
 #START OF AGGREGATION
 mental = get_mental_illness()
@@ -416,7 +432,6 @@ peace_sane_unarmed = get_peace_sane_unarmed()
 color = get_color()
 female = get_female()
 
-#START OF CREATING THE DATACUBE
 
 #state and year groupbys
 state_year, stateORD_year, state_yearORD = groupby_state_year()
@@ -438,8 +453,9 @@ shootings['severity'] = shootings.apply(calculate_severity, axis=1)
 shootings.to_excel('severity.xlsx', index =False)
 shootings.to_csv('shootings2.csv', index = False)
 
-#run the clustering algorithm
-#clusters()
 
-#or better, let us run a regression model
-regression()
+shootings = add_raceCount(shootings)
+
+
+reg_df = regression_df(shootings)
+#regression()
